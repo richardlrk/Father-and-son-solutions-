@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Father and Son Solutions | Roofing, Gutters & Glass NC</title>
+  <meta name="description" content="Father and Son Solutions offers expert roofing, gutter, and glass services across North Carolina. Get your free estimate today!">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <style>
+    body { background-color: #f9f9f9; color: #000; }
+    header.hero {
+      background: url('https://raw.githubusercontent.com/richardlrk/Father-and-son-solutions-/refs/heads/Assets/images/IMG_9049.jpeg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 6rem 2rem;
+      position: relative;
+    }
+    header.hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5);
+    }
+    header.hero > * { position: relative; z-index: 2; }
+    .service-card img { width: 100%; border-radius: 8px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+    .city-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; }
+    .city-grid div { background: #fff; padding: 1rem; text-align: center; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <h1>Father & Son Solutions</h1>
+    <p>Your trusted partner for Roofing, Gutter & Glass Services in North Carolina</p>
+    <a href="#estimate" role="button">Get Your Free Estimate</a>
+  </header>
+
+  <main class="container">
+    <h2 id="estimate">Get Your Free Estimate Today!</h2>
+    <form class="grid" onsubmit="event.preventDefault(); alert('Lead submitted!');">
+      <input type="text" placeholder="First Name" required>
+      <input type="text" placeholder="Last Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <input type="text" placeholder="City, NC" required>
+      <select required>
+        <option value="">Select Service Needed*</option>
+        <option>Roofing Services</option>
+        <option>Gutter Installation/Repair</option>
+        <option>Glass/Window Services</option>
+        <option>Multiple Services</option>
+      </select>
+      <textarea placeholder="Tell us about your project..."></textarea>
+      <button type="submit">Get My Free Estimate</button>
+    </form>
+
+    <h2>Our Services</h2>
+    <div class="grid-3">
+      <div class="service-card">
+        <img src="https://raw.githubusercontent.com/richardlrk/Father-and-son-solutions-/refs/heads/Assets/images/IMG_9041.jpeg" alt="Gutter installation in North Carolina">
+        <h3>Professional Gutter Services</h3>
+        <ul>
+          <li>Seamless Gutter Installation</li>
+          <li>Gutter Repair & Maintenance</li>
+          <li>Downspout Installation</li>
+          <li>Gutter Guards & Protection</li>
+          <li>Emergency Gutter Services</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <img src="https://raw.githubusercontent.com/richardlrk/Father-and-son-solutions-/refs/heads/Assets/images/IMG_9043.jpeg" alt="Roof repair and installation NC">
+        <h3>Expert Roofing Solutions</h3>
+        <ul>
+          <li>Roof Inspection & Repair</li>
+          <li>Complete Roof Replacement</li>
+          <li>Storm Damage Restoration</li>
+          <li>Shingle & Metal Roofing</li>
+          <li>Emergency Roof Services</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <img src="https://raw.githubusercontent.com/richardlrk/Father-and-son-solutions-/refs/heads/Assets/images/IMG_9047.jpeg" alt="Glasswork installation in North Carolina">
+        <h3>Glass & Window Services</h3>
+        <ul>
+          <li>Window Installation & Replacement</li>
+          <li>Glass Door Installation</li>
+          <li>Storm Window Services</li>
+          <li>Energy-Efficient Glass</li>
+          <li>Commercial Glass Services</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>Proudly Serving All of North Carolina</h2>
+    <div class="city-grid">
+      <div>Charlotte</div><div>Raleigh</div><div>Greensboro</div><div>Durham</div>
+      <div>Winston-Salem</div><div>Fayetteville</div><div>Cary</div><div>Wilmington</div>
+      <div>Asheville</div><div>Chapel Hill</div><div>Concord</div><div>High Point</div>
+      <div>Jacksonville</div><div>Gastonia</div><div>Rocky Mount</div><div>Burlington</div>
+    </div>
+
+    <h2>Contact Us</h2>
+    <p><strong>Address:</strong> 214 Wilkesboro Street, Mocksville, NC 27028</p>
+    <p><strong>Phone:</strong> <a href="tel:13367759543">336.775.9543</a></p>
+  </main>
+
+  <footer class="container">
+    <small>© 2025 Father & Son Solutions. All rights reserved.</small>
+  </footer>
+
+<script>
+  const form = document.querySelector("form");
+
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+
+    const data = new FormData(form);
+
+    fetch("https://script.google.com/macros/s/AKfycbwdM4ZC-NXjq833-J58NecwDi08gf6sTn5DoTkapsn-eEWKUJECWb4BNCfQHAhywN-DYg/exec", {
+      method: "POST",
+      body: data
+    })
+    .then(res => res.text())
+    .then(txt => {
+      alert("✅ Tack! Ditt meddelande har skickats. Vi återkommer snart.");
+      form.reset();
+    })
+    .catch(err => {
+      alert("❌ Något gick fel, prova igen.");
+      console.error(err);
+    });
+  });
+</script>
+
+</body>
+</html>
