@@ -103,6 +103,25 @@
     <h2>Contact Us</h2>
     <p><strong>Address:</strong> 214 Wilkesboro Street, Mocksville, NC 27028</p>
     <p><strong>Phone:</strong> <a href="tel:13367759543">336.775.9543</a></p>
+ <form id="leadForm">
+    <input type="text" name="FirstName" placeholder="First Name" required>
+    <input type="text" name="LastName" placeholder="Last Name" required>
+    <input type="email" name="Email" placeholder="Email" required>
+    <input type="tel" name="Phone" placeholder="Phone" required>
+    <input type="text" name="City" placeholder="City" required>
+
+    <select name="Service" required>
+      <option value="">Select Service</option>
+      <option value="Roofing">Roofing Services</option>
+      <option value="Gutter">Gutter Installation/Repair</option>
+      <option value="Glass">Glass/Window Services</option>
+      <option value="Multiple">Multiple Services</option>
+    </select>
+
+    <textarea name="Message" placeholder="Your message..."></textarea>
+
+    <button type="submit">Send</button>
+  </form>
   </main>
 
   <footer class="container">
