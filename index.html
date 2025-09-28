@@ -123,11 +123,11 @@
     })
     .then(res => res.text())
     .then(txt => {
-      alert("✅ Tack! Ditt meddelande har skickats. Vi återkommer snart.");
+      alert("✅ Thank you! Your message has been sent. We will get back to you shortly.");
       form.reset();
     })
     .catch(err => {
-      alert("❌ Något gick fel, prova igen.");
+      alert("❌ Something went wrong, please try again.");
       console.error(err);
     });
   });
