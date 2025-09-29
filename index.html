@@ -38,22 +38,25 @@
 
   <main class="container">
     <h2 id="estimate">Get Your Free Estimate Today!</h2>
-    <form class="grid" onsubmit="event.preventDefault(); alert('Lead submitted!');">
-      <input type="text" placeholder="First Name" required>
-      <input type="text" placeholder="Last Name" required>
-      <input type="email" placeholder="Email Address" required>
-      <input type="tel" placeholder="Phone Number" required>
-      <input type="text" placeholder="City, NC" required>
-      <select required>
-        <option value="">Select Service Needed*</option>
-        <option>Roofing Services</option>
-        <option>Gutter Installation/Repair</option>
-        <option>Glass/Window Services</option>
-        <option>Multiple Services</option>
-      </select>
-      <textarea placeholder="Tell us about your project..."></textarea>
-      <button type="submit">Get My Free Estimate</button>
-    </form>
+    <form class="grid" onsubmit="event.preventDefault(); alert('Thank you!');">
+  <input type="text" name="firstname" placeholder="First Name" required>
+  <input type="text" name="lastname" placeholder="Last Name" required>
+  <input type="email" name="email" placeholder="Email Address" required>
+  <input type="tel" name="phone" placeholder="Phone Number" required>
+  <input type="text" name="city" placeholder="City, NC" required>
+
+  <select name="service" required>
+    <option value="">Select Service Needed*</option>
+    <option value="Roofing">Roofing Services</option>
+    <option value="Gutter">Gutter Installation/Repair</option>
+    <option value="Glass">Glass/Window Services</option>
+    <option value="Multiple">Multiple Services</option>
+  </select>
+
+  <textarea name="message" placeholder="Tell us about your project..."></textarea>
+
+  <button type="submit">Get My Free Estimate</button>
+</form>
 
     <h2>Our Services</h2>
     <div class="grid-3">
@@ -103,25 +106,7 @@
     <h2>Contact Us</h2>
     <p><strong>Address:</strong> 214 Wilkesboro Street, Mocksville, NC 27028</p>
     <p><strong>Phone:</strong> <a href="tel:13367759543">336.775.9543</a></p>
- <form id="leadForm">
-    <input type="text" name="FirstName" placeholder="First Name" required>
-    <input type="text" name="LastName" placeholder="Last Name" required>
-    <input type="email" name="Email" placeholder="Email" required>
-    <input type="tel" name="Phone" placeholder="Phone" required>
-    <input type="text" name="City" placeholder="City" required>
 
-    <select name="Service" required>
-      <option value="">Select Service</option>
-      <option value="Roofing">Roofing Services</option>
-      <option value="Gutter">Gutter Installation/Repair</option>
-      <option value="Glass">Glass/Window Services</option>
-      <option value="Multiple">Multiple Services</option>
-    </select>
-
-    <textarea name="Message" placeholder="Your message..."></textarea>
-
-    <button type="submit">Send</button>
-  </form>
   </main>
 
   <footer class="container">
