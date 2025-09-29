@@ -1,17 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
   <url>
     <loc>https://fatherandson.solutions/</loc>
     <lastmod>2025-09-29</lastmod>
     <priority>1.0</priority>
   </url>
+
+  
   <url>
-    <loc>https://fatherandson.solutions/services</loc>
+    <loc>https://fatherandson.solutions/#roofing</loc>
+    <lastmod>2025-09-29</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://fatherandson.solutions/#gutters</loc>
+    <lastmod>2025-09-29</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://fatherandson.solutions/#glass</loc>
+    <lastmod>2025-09-29</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  
+  <url>
+    <loc>https://fatherandson.solutions/#services</loc>
     <lastmod>2025-09-29</lastmod>
     <priority>0.8</priority>
   </url>
+
+  
   <url>
-    <loc>https://fatherandson.solutions/contact</loc>
+    <loc>https://fatherandson.solutions/#contact</loc>
     <lastmod>2025-09-29</lastmod>
     <priority>0.8</priority>
   </url>
