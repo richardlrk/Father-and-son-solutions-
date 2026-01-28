@@ -6,40 +6,111 @@
   <title>Roofing, Gutters & Glass in Durham NC | Father & Son Solutions</title>
   <meta name="description" content="Expert roofing, gutter, and glass services in Durham, NC. Licensed contractor for roof repair, replacement, seamless gutters & windows. Free estimates!">
   <link rel="canonical" href="https://fatherandson.solutions/Durham.html">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
-    body { background-color: #ffffff; color: #1a1a1a; }
-    header.hero {
-      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://raw.githubusercontent.com/richardlrk/Father-and-son-solutions-/refs/heads/Assets/images/IMG_9049.jpeg') center/cover no-repeat;
-      color: #ffffff;
-      text-align: center;
-      padding: 4rem 1rem;
-    }
-    header.hero h1 { color: #ffffff !important; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
-    header.hero p { color: #ffffff !important; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); }
-    h1, h2, h3, h4, h5, h6 { color: #1a1a1a; }
-    article { background: #ffffff; border: 1px solid #e5e5e5; border-radius: 8px; padding: 1.5rem; }
-    a { color: #2563eb; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --black: #0a0a0a; --dark: #1a1a1a; --gray-dark: #4a4a4a; --gray: #6b6b6b; --gray-light: #9ca3af; --off-white: #f5f5f5; --white: #ffffff; --accent: #1e3a5f; --transition: all 0.3s ease; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', -apple-system, sans-serif; font-weight: 400; line-height: 1.6; color: var(--dark); background: var(--white); font-size: 16px; }
+    h1, h2, h3, h4 { font-weight: 600; line-height: 1.3; color: var(--black); letter-spacing: -0.02em; }
+    h1 { font-size: clamp(2rem, 4vw, 2.75rem); margin-bottom: 1rem; }
+    h2 { font-size: clamp(1.5rem, 2.5vw, 1.75rem); margin-bottom: 1rem; }
+    h3 { font-size: 1.2rem; margin-bottom: 0.75rem; }
+    p { margin-bottom: 1rem; color: var(--gray); }
+    a { color: var(--accent); text-decoration: none; transition: var(--transition); }
+    a:hover { color: var(--black); }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+    .section { padding: 4rem 0; }
+    .section-header { max-width: 600px; margin: 0 auto 2rem; text-align: center; }
+    .mb-2 { margin-bottom: 2rem; }
+    .header { background: var(--white); border-bottom: 1px solid var(--off-white); padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
+    .header-inner { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 1.2rem; font-weight: 600; color: var(--black); }
+    .logo span { color: var(--gray-light); font-weight: 400; }
+    .nav { display: flex; gap: 2rem; align-items: center; }
+    .nav a { font-size: 0.9rem; font-weight: 500; color: var(--gray-dark); }
+    .btn { display: inline-block; padding: 0.8rem 1.5rem; font-size: 0.9rem; font-weight: 500; border-radius: 4px; transition: var(--transition); cursor: pointer; border: none; }
+    .btn-dark { background: var(--black); color: var(--white); }
+    .btn-dark:hover { background: var(--gray-dark); }
+    .hero { min-height: 50vh; display: flex; align-items: center; background: linear-gradient(to right, #fafafa 50%, var(--white) 50%), url('https://raw.githubusercontent.com/richardlrk/Father-and-son-solutions-/refs/heads/Assets/images/IMG_9049.jpeg') center/cover; padding: 5rem 0 3rem; }
+    .hero-content { max-width: 500px; }
+    .hero p { font-size: 1.05rem; margin-bottom: 1.5rem; }
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .service-card { background: var(--white); border: 1px solid var(--off-white); border-radius: 8px; padding: 1.5rem; transition: var(--transition); }
+    .service-card:hover { border-color: var(--gray-light); box-shadow: 0 15px 30px rgba(0,0,0,0.05); }
+    .service-list { list-style: none; margin: 1rem 0 0; }
+    .service-list li { padding: 0.5rem 0; font-size: 0.9rem; color: var(--gray-dark); border-bottom: 1px solid var(--off-white); }
+    .service-list li:last-child { border-bottom: none; }
+    .service-link { display: inline-block; margin-top: 1rem; font-size: 0.875rem; font-weight: 500; color: var(--black); border-bottom: 1px solid var(--gray-light); padding-bottom: 2px; }
+    .lead { background: var(--off-white); padding: 4rem 0; }
+    .lead-form { max-width: 500px; margin: 0 auto; }
+    .lead-form h2 { text-align: center; }
+    .lead-form > p { text-align: center; margin-bottom: 1.5rem; }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .form-full { grid-column: 1 / -1; }
+    .form-group label { display: block; font-size: 0.85rem; font-weight: 500; margin-bottom: 0.4rem; }
+    .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 0.875rem; font-size: 0.9rem; border: 1px solid var(--gray-light); border-radius: 4px; background: var(--white); font-family: inherit; }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--black); }
+    .form-group textarea { min-height: 80px; }
+    .form-submit { width: 100%; padding: 1rem; font-size: 0.95rem; font-weight: 500; background: var(--black); color: var(--white); border: none; border-radius: 4px; cursor: pointer; margin-top: 0.5rem; }
+    .form-submit:hover { background: var(--gray-dark); }
+    .form-note { text-align: center; font-size: 0.8rem; color: var(--gray); margin-top: 0.75rem; }
+    .footer { background: var(--off-white); padding: 2rem 0; text-align: center; }
+    .footer p { font-size: 0.9rem; color: var(--gray); margin-bottom: 0.25rem; }
+    .footer a { color: var(--gray); }
+    @media (max-width: 768px) { .nav { display: none; } .hero { background: var(--off-white); padding: 4rem 0; } .services-grid { grid-template-columns: 1fr; } .form-grid { grid-template-columns: 1fr; } }
   </style>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"RoofingContractor","name":"Father & Son Solutions - Durham","url":"https://fatherandson.solutions/Durham.html","telephone":"+1-336-775-9543","areaServed":"Durham, NC","priceRange":"$$"}</script>
 </head>
 <body>
-  <header class="hero">
-    <h1> Durham's Trusted Roofing & Home Services</h1>
-    <p>Father & Son Solutions | Licensed & Insured | Free Estimates</p>
-    <a href="#estimate" role="button" class="contrast">Get Free Estimate</a>
-  </header>
-  <main class="container">
-    <section><h2>Professional Services in Durham</h2><p>Serving Durham homeowners with expert roofing, gutter, and glass solutions.</p></section>
-    <div class="grid-3">
-      <article><h3> Roofing Services</h3><ul><li>Roof Inspection & Repair</li><li>Complete Roof Replacement</li><li>Storm Damage Restoration</li><li>Emergency 24/7 Service</li></ul><a href="roofing.html">Learn More →</a></article>
-      <article><h3> Gutter Services</h3><ul><li>Seamless Gutter Installation</li><li>Gutter Repair & Maintenance</li><li>Downspout Services</li></ul><a href="gutters.html">Learn More →</a></article>
-      <article><h3> Glass & Windows</h3><ul><li>Window Installation</li><li>Glass Door Services</li></ul><a href="glass.html">Learn More →</a></article>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Father & Son <span>Solutions</span></a>
+      <nav class="nav"><a href="index.html#services">Services</a><a href="index.html#areas">Areas</a><a href="#estimate" class="btn btn-dark">Request Estimate</a></nav>
     </div>
-    <section id="estimate"><h2> Get Your Free Estimate</h2><form id="leadForm" class="grid"><input type="text" name="firstname" placeholder="First Name" required><input type="text" name="lastname" placeholder="Last Name" required><input type="email" name="email" placeholder="Email" required><input type="tel" name="phone" placeholder="Phone" required><input type="text" name="city" value="Durham, NC" required><select name="service" required><option value="">Select Service*</option><option value="Roofing">Roofing</option><option value="Gutter">Gutters</option><option value="Glass">Glass/Windows</option><option value="Emergency">Emergency Repair</option></select><textarea name="message" placeholder="Tell us about your project..."></textarea><button type="submit">Request Free Estimate</button></form></section>
-    <nav><p><a href="index.html">← Back to Main Site</a></p></nav>
-  </main>
-  <footer class="container"><small>© 2025 Father & Son Solutions | <a href="tel:13367759543">336-775-9543</a></small></footer>
-<script>document.querySelector("form").addEventListener("submit",function(e){e.preventDefault();alert("Thank you! We'll contact you shortly for your free estimate.");this.reset();});</script>
+  </header>
+  <section class="hero">
+    <div class="container"><div class="hero-content"><h1>Durham's Trusted Roofing & Home Services</h1><p>Expert roofing, gutter, and glass services throughout Durham and the surrounding areas. Licensed, insured, and committed to quality.</p><a href="#estimate" class="btn btn-dark">Request Free Estimate</a></div></div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="section-header"><h2>Services in Durham</h2><p>Comprehensive solutions for residential and commercial properties</p></div>
+      <div class="services-grid">
+        <article class="service-card"><h3>Roofing Services</h3><p>Complete roofing solutions for Durham homeowners</p><ul class="service-list"><li>Roof Inspection & Repair</li><li>Complete Roof Replacement</li><li>Storm Damage Restoration</li><li>Emergency 24/7 Service</li></ul><a href="roofing.html" class="service-link">Learn More</a></article>
+        <article class="service-card"><h3>Gutter Services</h3><p>Protect your foundation with quality gutters</p><ul class="service-list"><li>Seamless Gutter Installation</li><li>Gutter Repair & Maintenance</li><li>Downspout Services</li><li>Gutter Guard Systems</li></ul><a href="gutters.html" class="service-link">Learn More</a></article>
+        <article class="service-card"><h3>Glass & Window Services</h3><p>Professional glass solutions for your home</p><ul class="service-list"><li>Window Installation</li><li>Glass Door Services</li><li>Energy-Efficient Solutions</li><li>Storm Window Repair</li></ul><a href="glass.html" class="service-link">Learn More</a></article>
+      </div>
+    </div>
+  </section>
+  <section id="estimate" class="lead">
+    <div class="container">
+      <div class="lead-form"><h2>Request a Free Estimate</h2><p>Contact us today for a no-obligation consultation</p>
+        <form id="leadForm">
+          <div class="form-grid">
+            <div class="form-group"><label for="firstname">First Name *</label><input type="text" id="firstname" name="firstname" required></div>
+            <div class="form-group"><label for="lastname">Last Name *</label><input type="text" id="lastname" name="lastname" required></div>
+            <div class="form-group"><label for="email">Email *</label><input type="email" id="email" name="email" required></div>
+            <div class="form-group"><label for="phone">Phone *</label><input type="tel" id="phone" name="phone" required></div>
+            <div class="form-group form-full"><label for="city">City *</label><input type="text" id="city" name="city" value="Durham, NC" required></div>
+            <div class="form-group form-full"><label for="service">Service Needed *</label><select id="service" name="service" required><option value="">Select a Service</option><option value="Roofing">Roofing</option><option value="Gutter">Gutters</option><option value="Glass">Glass/Windows</option><option value="Emergency">Emergency Repair</option></select></div>
+            <div class="form-group form-full"><label for="message">Project Details</label><textarea id="message" name="message" placeholder="Tell us about your project..."></textarea></div>
+          </div>
+          <button type="submit" class="form-submit">Request Free Estimate</button>
+          <p class="form-note">We respect your privacy.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer class="footer"><p>Father & Son Solutions | <a href="tel:13367759543">336-775-9543</a></p><p>Serving Durham and all of North Carolina</p></footer>
+<script>
+  document.querySelector("form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const data = new FormData(this);
+    fetch("https://script.google.com/macros/s/AKfycbwdM4ZC-NXjq833-J58NecwDi08gf6sTn5DoTkapsn-eEWKUJECWb4BNCfQHAhywN-DYg/exec", { method: "POST", body: data })
+    .then(res => res.text()).then(txt => { alert("Thank you! We'll contact you shortly."); this.reset(); })
+    .catch(err => { alert("Something went wrong, please try again."); });
+  });
+</script>
 </body>
 </html>
