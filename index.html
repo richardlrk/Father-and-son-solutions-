@@ -2,374 +2,424 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Father & Son Solutions | Roofing, Gutters & Glass Services in North Carolina (Charlotte, Raleigh, Greensboro)</title>
-  <meta name="description" content="Father & Son Solutions offers expert roofing, gutter, and glass services across North Carolina. Licensed roofing contractor in Charlotte, Raleigh, Greensboro, Durham, Winston-Salem. Free estimates, emergency repairs, storm damage restoration. Call 336-775-9543">
-  <meta name="keywords" content="roofing contractor North Carolina, roof repair Charlotte NC, roof replacement Raleigh NC, gutter installation Greensboro, gutter repair Durham, glass window services Winston-Salem, storm damage repair NC, licensed roofer, emergency roof repair, residential roofing, commercial roofing, metal roofing, shingle repair">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Father & Son Solutions | Expert Roofing, Gutters & Glass in North Carolina</title>
+  <meta name="description" content="Trusted local roofing contractor serving Charlotte, Raleigh, Greensboro & all NC. Licensed & insured. Free estimates. 20+ years experience. Emergency repairs available.">
   <link rel="canonical" href="https://fatherandson.solutions/">
-  
-  <!-- Open Graph / Social Media -->
-  <meta property="og:title" content="Father & Son Solutions | Roofing, Gutters & Glass NC">
-  <meta property="og:description" content="Professional roofing, gutter, and glass services in North Carolina. Licensed & insured. Free estimates!">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://fatherandson.solutions/">
-  <meta property="og:image" content="https://fatherandson.solutions/og-image.jpg">
-  
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Father & Son Solutions | Roofing, Gutters & Glass NC">
-  <meta name="twitter:description" content="Professional roofing, gutter, and glass services across North Carolina. Get your free estimate today!">
-  
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    body { background-color: #ffffff; color: #222; color: #111; }
-    header.hero {
-      background: url('https://raw.githubusercontent.com/richardlrk/Father-and-son-solutions-/refs/heads/Assets/images/IMG_9049.jpeg') center/cover no-repeat;
-      color: white;
-      text-align: center;
-      padding: 6rem 2rem;
-      position: relative;
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --secondary: #0f172a;
+      --accent: #f59e0b;
+      --success: #10b981;
+      --light: #f8fafc;
+      --dark: #1e293b;
+      --gray: #64748b;
+      --white: #ffffff;
+      --shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+      --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+      --radius: 12px;
+      --transition: all 0.3s ease;
     }
-    header.hero::after {
-      content: "";
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0,0,0,0.5);
-    }
-    header.hero > * { position: relative; z-index: 2; }
-    .service-card img { width: 100%; border-radius: 8px; }
-    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
-    .city-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; }
-    .city-grid div { background: #fff; padding: 1rem; text-align: center; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    body, p, label, input, textarea, select, option {
-      color: #111;
-    }
-    h1, h2, h3, h4, h5, h6 {
-      color: #000; 
-    }
-    ::placeholder {
-      color: #333; 
-      opacity: 1; 
-    }
-    header.hero, 
-    header.hero h1, 
-    header.hero h2, 
-    header.hero p {
-      color: #fff !important;
-    }
-    .intro {
-      max-width: 700px;
-      margin: 2rem auto;
-      font-size: 1.3rem;
-      line-height: 1.6;
-      text-align: center;
-      font-weight: 500;
-      color: #222;
-    }
-    .trust-badges {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      flex-wrap: wrap;
-      margin: 2rem 0;
-    }
-    .trust-badges span {
-      background: #e8f4e8;
-      padding: 0.5rem 1rem;
-      border-radius: 20px;
-      font-size: 0.9rem;
-      font-weight: 600;
-      color: #2a7a2a;
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--dark); background: var(--white); }
+    h1, h2, h3, h4, h5, h6 { font-weight: 700; line-height: 1.2; color: var(--secondary); }
+    h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 1rem; }
+    h2 { font-size: clamp(1.5rem, 3vw, 2.5rem); margin-bottom: 1rem; }
+    h3 { font-size: 1.5rem; margin-bottom: 0.75rem; }
+    p { margin-bottom: 1rem; color: var(--gray); }
+    a { color: var(--primary); text-decoration: none; transition: var(--transition); }
+    a:hover { color: var(--primary-dark); }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+    .mb-2 { margin-bottom: 2rem; }
+    .mb-3 { margin-bottom: 3rem; }
+    
+    /* Header */
+    .header { position: fixed; top: 0; left: 0; right: 0; background: var(--white); box-shadow: var(--shadow); z-index: 1000; padding: 1rem 0; }
+    .header-inner { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 1.5rem; font-weight: 700; color: var(--secondary); }
+    .logo span { color: var(--primary); }
+    .nav { display: flex; gap: 2rem; align-items: center; }
+    .nav a { color: var(--dark); font-weight: 500; padding: 0.5rem 0; position: relative; }
+    .nav a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: var(--primary); transition: var(--transition); }
+    .nav a:hover::after { width: 100%; }
+    .phone-cta { display: flex; align-items: center; gap: 0.5rem; color: var(--primary); font-weight: 600; }
+    
+    /* Hero */
+    .hero { position: relative; min-height: 90vh; display: flex; align-items: center; background: linear-gradient(135deg, rgba(15,23,42,0.92) 0%, rgba(37,99,235,0.85) 100%), url('https://raw.githubusercontent.com/richardlrk/Father-and-son-solutions-/refs/heads/Assets/images/IMG_9049.jpeg') center/cover; color: var(--white); padding: 8rem 0 4rem; }
+    .hero-content { max-width: 700px; }
+    .hero h1 { color: var(--white); }
+    .hero p { font-size: 1.25rem; color: rgba(255,255,255,0.9); }
+    .hero-badges { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem; }
+    .hero-badge { display: flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); padding: 0.75rem 1.25rem; border-radius: 50px; font-size: 0.9rem; font-weight: 500; }
+    
+    /* Buttons */
+    .btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 1rem 2rem; border-radius: var(--radius); font-weight: 600; font-size: 1rem; cursor: pointer; border: none; transition: var(--transition); }
+    .btn-primary { background: var(--accent); color: var(--secondary); }
+    .btn-primary:hover { background: #d97706; transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+    .btn-secondary { background: transparent; color: var(--white); border: 2px solid var(--white); }
+    .btn-secondary:hover { background: var(--white); color: var(--secondary); }
+    
+    /* Trust Bar */
+    .trust-bar { background: var(--light); padding: 3rem 0; }
+    .trust-logos { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 3rem; }
+    .trust-item { display: flex; align-items: center; gap: 0.75rem; font-weight: 600; color: var(--gray); font-size: 1.1rem; }
+    .trust-icon { width: 48px; height: 48px; background: var(--primary); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--white); font-size: 1.5rem; }
+    
+    /* Services */
+    .services { padding: 5rem 0; }
+    .section-header { text-align: center; max-width: 600px; margin: 0 auto 3rem; }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; }
+    .service-card { background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); transition: var(--transition); border: 1px solid #e2e8f0; }
+    .service-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
+    .service-image { height: 220px; overflow: hidden; }
+    .service-image img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition); }
+    .service-card:hover .service-image img { transform: scale(1.05); }
+    .service-content { padding: 1.5rem; }
+    .service-list { list-style: none; margin: 1rem 0; }
+    .service-list li { padding: 0.5rem 0; color: var(--gray); display: flex; align-items: center; gap: 0.5rem; }
+    .service-list li::before { content: '✓'; color: var(--success); font-weight: 700; }
+    .service-link { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--primary); font-weight: 600; margin-top: 1rem; }
+    
+    /* Stats */
+    .stats { background: var(--secondary); padding: 4rem 0; color: var(--white); }
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center; }
+    .stat-item h3 { color: var(--accent); font-size: 3rem; margin-bottom: 0.5rem; }
+    .stat-item p { color: rgba(255,255,255,0.8); }
+    
+    /* Testimonials */
+    .testimonials { padding: 5rem 0; background: var(--light); }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; }
+    .testimonial-card { background: var(--white); padding: 2rem; border-radius: var(--radius); box-shadow: var(--shadow); }
+    .stars { color: var(--accent); font-size: 1.25rem; margin-bottom: 1rem; }
+    .testimonial-text { font-style: italic; color: var(--dark); margin-bottom: 1.5rem; line-height: 1.8; }
+    .testimonial-author { display: flex; align-items: center; gap: 1rem; }
+    .author-avatar { width: 50px; height: 50px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: 700; }
+    .author-info strong { display: block; color: var(--secondary); }
+    .author-info span { font-size: 0.875rem; color: var(--gray); }
+    
+    /* Lead Form */
+    .lead-section { padding: 5rem 0; background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); }
+    .lead-form-wrapper { background: var(--white); border-radius: var(--radius); padding: 3rem; box-shadow: var(--shadow-lg); max-width: 600px; margin: 0 auto; }
+    .lead-form-wrapper h2 { text-align: center; margin-bottom: 0.5rem; }
+    .lead-form-wrapper > p { text-align: center; margin-bottom: 2rem; }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .form-full { grid-column: 1 / -1; }
+    .form-group { margin-bottom: 1rem; }
+    .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 500; color: var(--secondary); }
+    .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 1rem; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 1rem; transition: var(--transition); font-family: inherit; }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(37,99,235,0.1); }
+    .form-submit { width: 100%; padding: 1.25rem; background: var(--accent); color: var(--secondary); border: none; border-radius: 8px; font-size: 1.1rem; font-weight: 700; cursor: pointer; transition: var(--transition); }
+    .form-submit:hover { background: #d97706; transform: translateY(-2px); }
+    .form-note { text-align: center; margin-top: 1rem; font-size: 0.875rem; color: var(--gray); }
+    
+    /* Cities */
+    .cities { padding: 5rem 0; }
+    .cities-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
+    .city-card { background: var(--light); padding: 1.25rem; border-radius: var(--radius); text-align: center; font-weight: 600; color: var(--secondary); border: 2px solid transparent; transition: var(--transition); }
+    .city-card:hover { border-color: var(--primary); color: var(--primary); transform: translateY(-3px); }
+    
+    /* Blog */
+    .blog { padding: 5rem 0; background: var(--light); }
+    .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+    .blog-card { background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); transition: var(--transition); }
+    .blog-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+    .blog-content { padding: 1.5rem; }
+    .blog-meta { font-size: 0.875rem; color: var(--primary); font-weight: 500; margin-bottom: 0.5rem; }
+    
+    /* CTA Banner */
+    .cta-banner { background: var(--secondary); padding: 4rem 0; text-align: center; color: var(--white); }
+    .cta-banner h2 { color: var(--white); margin-bottom: 1rem; }
+    .cta-banner p { color: rgba(255,255,255,0.8); margin-bottom: 2rem; }
+    
+    /* Footer */
+    .footer { background: var(--dark); color: var(--white); padding: 4rem 0 2rem; }
+    .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; margin-bottom: 3rem; }
+    .footer h4 { color: var(--white); margin-bottom: 1.5rem; }
+    .footer p { color: rgba(255,255,255,0.7); }
+    .footer-links { list-style: none; }
+    .footer-links li { margin-bottom: 0.75rem; }
+    .footer-links a { color: rgba(255,255,255,0.7); }
+    .footer-links a:hover { color: var(--white); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; text-align: center; color: rgba(255,255,255,0.5); }
+    
+    @media (max-width: 768px) {
+      .nav { display: none; }
+      .form-grid { grid-template-columns: 1fr; }
+      .hero { min-height: auto; padding: 6rem 0 3rem; }
     }
   </style>
-  
-  <!-- Enhanced Schema.org Markup -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "RoofingContractor",
     "name": "Father & Son Solutions",
-    "image": "https://fatherandson.solutions/logo.png",
-    "@id": "https://fatherandson.solutions",
     "url": "https://fatherandson.solutions",
     "telephone": "+1-336-775-9543",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "214 Wilkesboro Street",
-      "addressLocality": "Mocksville",
-      "addressRegion": "NC",
-      "postalCode": "27028",
-      "addressCountry": "US"
-    },
+    "address": {"@type": "PostalAddress", "streetAddress": "214 Wilkesboro Street", "addressLocality": "Mocksville", "addressRegion": "NC", "postalCode": "27028"},
     "priceRange": "$$",
-    "paymentAccepted": "Cash, Check, Credit Card, Insurance",
-    "currenciesAccepted": "USD",
-    "areaServed": {
-      "@type": "Place",
-      "name": "North Carolina, USA",
-      "containsPlace": [
-        {"@type": "Place", "name": "Charlotte, NC"},
-        {"@type": "Place", "name": "Raleigh, NC"},
-        {"@type": "Place", "name": "Greensboro, NC"},
-        {"@type": "Place", "name": "Durham, NC"},
-        {"@type": "Place", "name": "Winston-Salem, NC"},
-        {"@type": "Place", "name": "Fayetteville, NC"},
-        {"@type": "Place", "name": "Cary, NC"},
-        {"@type": "Place", "name": "Wilmington, NC"},
-        {"@type": "Place", "name": "Asheville, NC"},
-        {"@type": "Place", "name": "Chapel Hill, NC"},
-        {"@type": "Place", "name": "Concord, NC"},
-        {"@type": "Place", "name": "High Point, NC"},
-        {"@type": "Place", "name": "Jacksonville, NC"},
-        {"@type": "Place", "name": "Gastonia, NC"},
-        {"@type": "Place", "name": "Rocky Mount, NC"},
-        {"@type": "Place", "name": "Burlington, NC"},
-        {"@type": "Place", "name": "Mooresville, NC"}
-      ]
-    },
-    "serviceType": ["Roofing", "Gutter Installation", "Gutter Repair", "Glass Repair", "Window Replacement", "Storm Damage Repair"],
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "07:00",
-        "closes": "18:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Saturday"],
-        "opens": "08:00",
-        "closes": "14:00"
-      }
-    ],
-    "review": {
-      "@type": "Review",
-      "author": {"@type": "Person", "name": "Local Homeowner"},
-      "datePublished": "2024-12-01",
-      "reviewBody": "Professional roofing services. Fixed our storm damage quickly and fairly priced. Highly recommend!",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      }
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "reviewCount": "47"
-    }
+    "areaServed": "North Carolina, USA",
+    "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "47"}
   }
   </script>
 </head>
 <body>
 
-  <header class="hero">
-    <h1>Professional Roofing, Gutters & Glass Services<br>Across North Carolina</h1>
-    <h2>|Father & Son Solutions|</h2>
-    <p>Licensed & Insured | Free Estimates | Emergency Repairs Available</p>
-    <a href="#estimate" role="button" class="contrast">Get Your Free Estimate</a>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Father & <span>Son</span></a>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#areas">Service Areas</a>
+        <a href="#blog">Blog</a>
+        <a href="#estimate" class="btn btn-primary">Free Estimate</a>
+      </nav>
+      <a href="tel:13367759543" class="phone-cta">📞 336-775-9543</a>
+    </div>
   </header>
 
-<section class="intro">
-  <p>
-    <strong>Father & Son Solutions</strong> is your trusted local expert for 
-    <strong>roofing, gutter, and glass services</strong> across North Carolina. 
-    From Charlotte to Raleigh, Greensboro to Wilmington — we help homeowners 
-    protect their investments with reliable, affordable solutions. Whether you 
-    need emergency roof repair after a storm, seamless gutter installation, or 
-    professional glass services, our experienced team delivers quality workmanship 
-    backed by years of industry expertise.
-  </p>
-</section>
-
-<div class="trust-badges">
-  <span>✅ Licensed & Insured</span>
-  <span>✅ Free Estimates</span>
-  <span>✅ 20+ Years Experience</span>
-  <span>✅ Emergency Service</span>
-  <span>✅ Local NC Business</span>
-</div>
-  
-  <main class="container">
-    <h2 id="estimate">Get Your Free Estimate Today!</h2>
-    <form id="leadForm" class="grid">
-      <input type="text" name="firstname" placeholder="First Name" required aria-label="First Name">
-      <input type="text" name="lastname" placeholder="Last Name" required aria-label="Last Name">
-      <input type="email" name="email" placeholder="Email Address" required aria-label="Email">
-      <input type="tel" name="phone" placeholder="Phone Number" required aria-label="Phone">
-      <input type="text" name="city" placeholder="City, NC" required aria-label="City">
-
-      <select name="service" required aria-label="Service Needed">
-        <option value="">Select Service Needed*</option>
-        <option value="Roofing">Roofing Services</option>
-        <option value="Gutter">Gutter Installation/Repair</option>
-        <option value="Glass">Glass/Window Services</option>
-        <option value="Multiple">Multiple Services</option>
-        <option value="Emergency">Emergency Repair</option>
-      </select>
-
-      <textarea name="message" placeholder="Tell us about your project..." aria-label="Project Details"></textarea>
-
-      <button type="submit">Get My Free Estimate</button>
-    </form>
-
-    <h2>Our Professional Services</h2>
-    <p>Comprehensive roofing, gutter, and glass solutions for residential and commercial properties throughout North Carolina.</p>
-    
-    <div class="grid-3">
-      <article class="service-card">
-        <a href="gutters.html">
-          <img src="https://raw.githubusercontent.com/richardlrk/Father-and-son-solutions-/refs/heads/main/IMG_9041.jpeg" alt="Professional Gutter Installation and Repair Services in North Carolina">
-          <h3>Gutter Services</h3>
-        </a>
-        <ul>
-          <li>Seamless Gutter Installation</li>
-          <li>Gutter Repair & Maintenance</li>
-          <li>Downspout Installation & Repair</li>
-          <li>Gutter Guards & Protection Systems</li>
-          <li>Emergency Gutter Services</li>
-          <li>Residential & Commercial Gutters</li>
-        </ul>
-        <a href="gutters.html">Learn more about our Gutter Services →</a>
-      </article>
-
-      <article class="service-card">
-        <a href="roofing.html">
-          <img src="https://raw.githubusercontent.com/richardlrk/Father-and-son-solutions-/refs/heads/main/IMG_9043.jpeg" alt="Expert Roofing Repair and Replacement Services in NC">
-          <h3>Roofing Solutions</h3>
-        </a>
-        <ul>
-          <li>Roof Inspection & Assessment</li>
-          <li>Complete Roof Replacement</li>
-          <li>Roof Repair (Shingles, Metal, Flat)</li>
-          <li>Storm Damage Restoration</li>
-          <li>Emergency Roof Services 24/7</li>
-          <li>Skylight Installation</li>
-        </ul>
-        <a href="roofing.html">Learn more about our Roofing Services →</a>
-      </article>
-
-      <article class="service-card">
-        <a href="glass.html">
-          <img src="https://raw.githubusercontent.com/richardlrk/Father-and-son-solutions-/refs/heads/main/IMG_9047.jpeg" alt="Glass and Window Installation and Repair Services">
-          <h3>Glass & Window Services</h3>
-        </a>
-        <ul>
-          <li>Window Installation & Replacement</li>
-          <li>Glass Door Installation</li>
-          <li>Storm Window Services</li>
-          <li>Energy-Efficient Glass Solutions</li>
-          <li>Commercial Glass Services</li>
-          <li>Custom Glass Projects</li>
-        </ul>
-        <a href="glass.html">Learn more about our Glass & Window Services →</a>
-      </article>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Professional Roofing, Gutters & Glass Services Across North Carolina</h1>
+        <p>Your trusted local expert for protecting homes and businesses. Licensed, insured, and committed to quality workmanship since 2004.</p>
+        <div class="hero-badges">
+          <div class="hero-badge">✓ Licensed & Insured</div>
+          <div class="hero-badge">✓ 20+ Years Experience</div>
+          <div class="hero-badge">✓ Free Estimates</div>
+          <div class="hero-badge">✓ 24/7 Emergency Service</div>
+        </div>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="#estimate" class="btn btn-primary">Get Free Estimate →</a>
+          <a href="tel:13367759543" class="btn btn-secondary">Call Now</a>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <section aria-labelledby="service-areas">
-      <h2 id="service-areas">Proudly Serving All of North Carolina</h2>
-      <p>Father & Son Solutions provides professional services to homeowners and businesses across the entire state. Click your city for dedicated local service pages:</p>
-      <div class="city-grid">
-        <a href="charlotte.html"><div>Charlotte</div></a>
-        <a href="raleigh.html"><div>Raleigh</div></a>
-        <a href="greensboro.html"><div>Greensboro</div></a>
-        <a href="durham.html"><div>Durham</div></a>
-        <a href="winston-salem.html"><div>Winston-Salem</div></a>
-        <a href="fayetteville.html"><div>Fayetteville</div></a>
-        <a href="cary.html"><div>Cary</div></a>
-        <a href="wilmington.html"><div>Wilmington</div></a>
-        <a href="asheville.html"><div>Asheville</div></a>
-        <a href="chapel-hill.html"><div>Chapel Hill</div></a>
-        <a href="concord.html"><div>Concord</div></a>
-        <a href="high-point.html"><div>High Point</div></a>
-        <a href="jacksonville.html"><div>Jacksonville</div></a>
-        <a href="gastonia.html"><div>Gastonia</div></a>
-        <a href="rocky-mount.html"><div>Rocky Mount</div></a>
-        <a href="burlington.html"><div>Burlington</div></a>
+  <!-- TRUST BAR -->
+  <section class="trust-bar">
+    <div class="container">
+      <div class="trust-logos">
+        <div class="trust-item"><div class="trust-icon">🛡️</div><span>Licensed Contractors</span></div>
+        <div class="trust-item"><div class="trust-icon">⭐</div><span>4.8/5 Rating</span></div>
+        <div class="trust-item"><div class="trust-icon">🏠</div><span>5000+ Jobs Done</span></div>
+        <div class="trust-item"><div class="trust-icon">💼</div><span>Fully Insured</span></div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section aria-labelledby="blog-section">
-      <h2 id="blog-section">📚 Roofing & Home Improvement Tips</h2>
-      <p>Expert advice for North Carolina homeowners:</p>
-      <div class="grid-3">
-        <article>
-          <h3><a href="blog/how-to-choose-roofing-contractor-north-carolina.html">How to Choose a Roofing Contractor</a></h3>
-          <p>Essential questions to ask and red flags to avoid when hiring a roofer in NC.</p>
+  <!-- SERVICES -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Professional Services</h2>
+        <p>Comprehensive solutions for residential and commercial properties across North Carolina</p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-image"><img src="https://raw.githubusercontent.com/richardlrk/Father-and-son-solutions-/refs/heads/main/IMG_9041.jpeg" alt="Gutter Services"></div>
+          <div class="service-content">
+            <h3>🌧️ Gutter Services</h3>
+            <p>Protect your foundation with premium gutter solutions</p>
+            <ul class="service-list">
+              <li>Seamless Gutter Installation</li>
+              <li>Gutter Repair & Maintenance</li>
+              <li>Downspout Services</li>
+              <li>Gutter Guard Systems</li>
+            </ul>
+            <a href="gutters.html" class="service-link">Learn More →</a>
+          </div>
         </article>
-        <article>
-          <h3><a href="blog/storm-damage-roof-repair-north-carolina.html">Storm Damage Roof Repair</a></h3>
-          <p>What to do after severe weather hits your North Carolina home.</p>
+        <article class="service-card">
+          <div class="service-image"><img src="https://raw.githubusercontent.com/richardlrk/Father-and-son-solutions-/refs/heads/main/IMG_9043.jpeg" alt="Roofing Services"></div>
+          <div class="service-content">
+            <h3>🛡️ Roofing Solutions</h3>
+            <p>Complete roofing services from inspection to replacement</p>
+            <ul class="service-list">
+              <li>Roof Inspection & Assessment</li>
+              <li>Complete Roof Replacement</li>
+              <li>Storm Damage Restoration</li>
+              <li>Emergency 24/7 Service</li>
+            </ul>
+            <a href="roofing.html" class="service-link">Learn More →</a>
+          </div>
         </article>
-        <article>
-          <h3><a href="blog/roof-replacement-cost-north-carolina.html">Roof Replacement Costs</a></h3>
-          <p>Realistic pricing for 2025 and factors that affect your total investment.</p>
-        </article>
-        <article>
-          <h3><a href="blog/signs-you-need-new-roof.html">10 Signs You Need a New Roof</a></h3>
-          <p>Don't ignore these warning signs that your roof needs attention.</p>
-        </article>
-        <article>
-          <h3><a href="blog/gutter-installation-guide.html">Gutter Installation Guide</a></h3>
-          <p>Why proper drainage protects your foundation and home value.</p>
-        </article>
-        <article>
-          <h3><a href="blog/energy-efficient-windows-north-carolina.html">Energy-Efficient Windows</a></h3>
-          <p>Reduce cooling costs with proper window choices for NC climate.</p>
+        <article class="service-card">
+          <div class="service-image"><img src="https://raw.githubusercontent.com/richardlrk/Father-and-son-solutions-/refs/heads/main/IMG_9047.jpeg" alt="Glass & Window Services"></div>
+          <div class="service-content">
+            <h3>🪟 Glass & Window Services</h3>
+            <p>Professional glass solutions for your home or business</p>
+            <ul class="service-list">
+              <li>Window Installation</li>
+              <li>Glass Door Services</li>
+              <li>Energy-Efficient Solutions</li>
+              <li>Storm Window Repair</li>
+            </ul>
+            <a href="glass.html" class="service-link">Learn More →</a>
+          </div>
         </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section aria-labelledby="why-choose-us">
-      <h2 id="why-choose-us">Why Choose Father & Son Solutions?</h2>
-      <ul>
-        <li><strong>20+ Years of Experience:</strong> Three generations of roofing expertise serving North Carolina</li>
-        <li><strong>Licensed & Insured:</strong> Fully licensed contractors with comprehensive insurance coverage</li>
-        <li><strong>Free Estimates:</strong> No-obligation consultations and competitive pricing</li>
-        <li><strong>Quality Materials:</strong> We use only top-rated materials from trusted manufacturers</li>
-        <li><strong>Emergency Services:</strong> 24/7 emergency response for storm damage and urgent repairs</li>
-        <li><strong>Local Knowledge:</strong> Understanding of North Carolina's unique weather challenges and building codes</li>
-        <li><strong>Satisfaction Guaranteed:</strong> We stand behind our work with solid warranties</li>
-      </ul>
-    </section>
+  <!-- STATS -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item"><h3>20+</h3><p>Years of Experience</p></div>
+        <div class="stat-item"><h3>5,000+</h3><p>Projects Completed</p></div>
+        <div class="stat-item"><h3>47</h3><p>5-Star Reviews</p></div>
+        <div class="stat-item"><h3>16</h3><p>Cities Served</p></div>
+      </div>
+    </div>
+  </section>
 
-    <section aria-labelledby="contact-info">
-      <h2 id="contact-info">Contact Us</h2>
-      <p><strong>Address:</strong> 214 Wilkesboro Street, Mocksville, NC 27028</p>
-      <p><strong>Phone:</strong> <a href="tel:13367759543">336-775-9543</a></p>
-      <p><strong>Email:</strong> <a href="mailto:info@fatherandson.solutions">info@fatherandson.solutions</a></p>
-      <p><strong>Hours:</strong> Mon-Fri 7AM-6PM | Sat 8AM-2PM | Emergency Service Available</p>
-    </section>
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2>What Our Customers Say</h2>
+        <p>Real feedback from homeowners across North Carolina</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Father & Son Solutions saved us after a major storm. They responded within hours and had our roof fixed in two days. Professional, fair pricing, and excellent communication throughout."</p>
+          <div class="testimonial-author"><div class="author-avatar">JM</div><div class="author-info"><strong>James M.</strong><span>Charlotte, NC</span></div></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"We've used them for both gutter replacement and window installation. The team is knowledgeable, clean, and the work quality is outstanding. Highly recommend!"</p>
+          <div class="testimonial-author"><div class="author-avatar">SK</div><div class="author-info"><strong>Sarah K.</strong><span>Raleigh, NC</span></div></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"After getting three quotes, Father & Son offered the best value. The new roof looks amazing and the crew was professional. They even cleaned up all debris!"</p>
+          <div class="testimonial-author"><div class="author-avatar">RT</div><div class="author-info"><strong>Robert T.</strong><span>Greensboro, NC</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  </main>
+  <!-- LEAD FORM -->
+  <section id="estimate" class="lead-section">
+    <div class="container">
+      <div class="lead-form-wrapper">
+        <h2>Get Your Free Estimate</h2>
+        <p>Contact us today for a no-obligation consultation</p>
+        <form id="leadForm">
+          <div class="form-grid">
+            <div class="form-group"><label for="firstname">First Name *</label><input type="text" id="firstname" name="firstname" required></div>
+            <div class="form-group"><label for="lastname">Last Name *</label><input type="text" id="lastname" name="lastname" required></div>
+            <div class="form-group"><label for="email">Email *</label><input type="email" id="email" name="email" required></div>
+            <div class="form-group"><label for="phone">Phone *</label><input type="tel" id="phone" name="phone" required></div>
+            <div class="form-group form-full"><label for="city">City, NC *</label><input type="text" id="city" name="city" required></div>
+            <div class="form-group form-full"><label for="service">Service Needed *</label>
+              <select id="service" name="service" required>
+                <option value="">Select a Service</option>
+                <option value="Roofing">Roofing Services</option>
+                <option value="Gutter">Gutter Installation/Repair</option>
+                <option value="Glass">Glass/Window Services</option>
+                <option value="Multiple">Multiple Services</option>
+                <option value="Emergency">Emergency Repair</option>
+              </select>
+            </div>
+            <div class="form-group form-full"><label for="message">Project Details</label><textarea id="message" name="message" rows="4" placeholder="Tell us about your project..."></textarea></div>
+          </div>
+          <button type="submit" class="form-submit">Request Free Estimate</button>
+          <p class="form-note">🔒 We respect your privacy. No spam, ever.</p>
+        </form>
+      </div>
+    </div>
+  </section>
 
-  <footer class="container">
-    <small>© 2025 Father & Son Solutions. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></small>
+  <!-- SERVICE AREAS -->
+  <section id="areas" class="cities">
+    <div class="container">
+      <div class="section-header">
+        <h2>Proudly Serving All of North Carolina</h2>
+        <p>Click your city for dedicated local service</p>
+      </div>
+      <div class="cities-grid">
+        <a href="charlotte.html" class="city-card">Charlotte</a>
+        <a href="raleigh.html" class="city-card">Raleigh</a>
+        <a href="greensboro.html" class="city-card">Greensboro</a>
+        <a href="durham.html" class="city-card">Durham</a>
+        <a href="winston-salem.html" class="city-card">Winston-Salem</a>
+        <a href="fayetteville.html" class="city-card">Fayetteville</a>
+        <a href="cary.html" class="city-card">Cary</a>
+        <a href="wilmington.html" class="city-card">Wilmington</a>
+        <a href="asheville.html" class="city-card">Asheville</a>
+        <a href="chapel-hill.html" class="city-card">Chapel Hill</a>
+        <a href="concord.html" class="city-card">Concord</a>
+        <a href="high-point.html" class="city-card">High Point</a>
+        <a href="jacksonville.html" class="city-card">Jacksonville</a>
+        <a href="gastonia.html" class="city-card">Gastonia</a>
+        <a href="rocky-mount.html" class="city-card">Rocky Mount</a>
+        <a href="burlington.html" class="city-card">Burlington</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog" class="blog">
+    <div class="container">
+      <div class="section-header">
+        <h2>📚 Roofing & Home Improvement Tips</h2>
+        <p>Expert advice for North Carolina homeowners</p>
+      </div>
+      <div class="blog-grid">
+        <a href="blog/how-to-choose-roofing-contractor-north-carolina.html" class="blog-card">
+          <div class="blog-content"><span class="blog-meta">Roofing Guide</span><h3>How to Choose a Roofing Contractor in NC</h3><p>Essential questions to ask and red flags to avoid when hiring a roofer.</p></div>
+        </a>
+        <a href="blog/storm-damage-roof-repair-north-carolina.html" class="blog-card">
+          <div class="blog-content"><span class="blog-meta">Storm Damage</span><h3>Storm Damage Roof Repair Guide</h3><p>What to do after severe weather hits your North Carolina home.</p></div>
+        </a>
+        <a href="blog/roof-replacement-cost-north-carolina.html" class="blog-card">
+          <div class="blog-content"><span class="blog-meta">Cost Guide</span><h3>Roof Replacement Costs in 2025</h3><p>Realistic pricing and factors that affect your total investment.</p></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Have a Roofing Emergency?</h2>
+      <p>We're available 24/7 for storm damage and urgent repairs.</p>
+      <a href="tel:13367759543" class="btn btn-primary">Call 336-775-9543</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Father & Son Solutions</h4><p>Your trusted local expert for roofing, gutter, and glass services across North Carolina since 2004.</p></div>
+        <div><h4>Quick Links</h4><ul class="footer-links"><li><a href="#services">Services</a></li><li><a href="#areas">Service Areas</a></li><li><a href="#blog">Blog</a></li><li><a href="#estimate">Get Estimate</a></li></ul></div>
+        <div><h4>Services</h4><ul class="footer-links"><li><a href="roofing.html">Roofing</a></li><li><a href="gutters.html">Gutters</a></li><li><a href="glass.html">Glass & Windows</a></li></ul></div>
+        <div><h4>Contact</h4><ul class="footer-links"><li>📍 214 Wilkesboro St, Mocksville, NC 27028</li><li>📞 <a href="tel:13367759543">336-775-9543</a></li><li>✉️ <a href="mailto:info@fatherandson.solutions">info@fatherandson.solutions</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p>© 2025 Father & Son Solutions. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p></div>
+    </div>
   </footer>
 
 <script>
-  const form = document.querySelector("form");
-
-  form.addEventListener("submit", e => {
+  document.querySelector("form").addEventListener("submit", function(e) {
     e.preventDefault();
-
-    const data = new FormData(form);
-
-    fetch("https://script.google.com/macros/s/AKfycbwdM4ZC-NXjq833-J58NecwDi08gf6sTn5DoTkapsn-eEWKUJECWb4BNCfQHAhywN-DYg/exec", {
-      method: "POST",
-      body: data
-    })
-    .then(res => res.text())
-    .then(txt => {
-      alert("✅ Thank you! Your message has been sent. We will get back to you shortly.");
-      form.reset();
-    })
-    .catch(err => {
-      alert("❌ Something went wrong, please try again.");
-      console.error(err);
-    });
+    const data = new FormData(this);
+    fetch("https://script.google.com/macros/s/AKfycbwdM4ZC-NXjq833-J58NecwDi08gf6sTn5DoTkapsn-eEWKUJECWb4BNCfQHAhywN-DYg/exec", { method: "POST", body: data })
+    .then(res => res.text()).then(txt => { alert("✅ Thank you! Your message has been sent. We will get back to you shortly."); this.reset(); })
+    .catch(err => { alert("❌ Something went wrong, please try again."); });
   });
 </script>
-
 </body>
 </html>

@@ -4,144 +4,209 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Roofing, Gutters & Glass in Charlotte NC | Father & Son Solutions</title>
-  <meta name="description" content="Expert roofing, gutter, and glass services in Charlotte, NC. Licensed contractor offering roof repair, replacement, seamless gutters & window services. Free estimates!">
-  <meta name="keywords" content="Charlotte NC roofing contractor, roof repair Charlotte NC, gutter installation Charlotte NC, window replacement Charlotte NC, storm damage repair Charlotte">
+  <meta name="description" content="Expert roofing, gutter, and glass services in Charlotte, NC. Licensed contractor for roof repair, replacement, seamless gutters & windows. Free estimates!">
   <link rel="canonical" href="https://fatherandson.solutions/charlotte.html">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      background-color: #ffffff;
-      color: #1a1a1a;
-    }
-    header.hero {
-      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://raw.githubusercontent.com/richardlrk/Father-and-son-solutions-/refs/heads/Assets/images/IMG_9049.jpeg') center/cover no-repeat;
-      color: #ffffff;
-      text-align: center;
-      padding: 4rem 1rem;
-    }
-    header.hero h1 {
-      color: #ffffff !important;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    }
-    header.hero p {
-      color: #ffffff !important;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-    }
-    h1, h2, h3, h4, h5, h6 {
-      color: #1a1a1a;
-    }
-    article {
-      background: #ffffff;
-      border: 1px solid #e5e5e5;
-      border-radius: 8px;
-      padding: 1.5rem;
-    }
-    a {
-      color: #2563eb;
+    :root { --primary: #2563eb; --secondary: #0f172a; --accent: #f59e0b; --success: #10b981; --light: #f8fafc; --dark: #1e293b; --gray: #64748b; --white: #ffffff; --shadow: 0 4px 6px -1px rgba(0,0,0,0.1); --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1); --radius: 12px; --transition: all 0.3s ease; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--dark); background: var(--white); }
+    h1, h2, h3, h4, h5, h6 { font-weight: 700; line-height: 1.2; color: var(--secondary); }
+    h1 { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1rem; }
+    h2 { font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 1rem; }
+    p { margin-bottom: 1rem; color: var(--gray); }
+    a { color: var(--primary); text-decoration: none; transition: var(--transition); }
+    a:hover { color: var(--primary-dark); }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+    .mb-2 { margin-bottom: 2rem; }
+    
+    /* Header */
+    .header { background: var(--white); box-shadow: var(--shadow); padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
+    .header-inner { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 1.5rem; font-weight: 700; color: var(--secondary); }
+    .logo span { color: var(--primary); }
+    .nav { display: flex; gap: 2rem; align-items: center; }
+    .nav a { color: var(--dark); font-weight: 500; }
+    .phone-cta { display: flex; align-items: center; gap: 0.5rem; color: var(--primary); font-weight: 600; }
+    
+    /* Hero */
+    .hero { position: relative; min-height: 60vh; display: flex; align-items: center; background: linear-gradient(135deg, rgba(15,23,42,0.92) 0%, rgba(37,99,235,0.85) 100%), url('https://raw.githubusercontent.com/richardlrk/Father-and-son-solutions-/refs/heads/Assets/images/IMG_9049.jpeg') center/cover; color: var(--white); padding: 6rem 0 3rem; }
+    .hero h1 { color: var(--white); }
+    .hero p { font-size: 1.1rem; color: rgba(255,255,255,0.9); }
+    .hero-badges { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.5rem; }
+    .hero-badge { background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.875rem; font-weight: 500; }
+    
+    .btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1.75rem; border-radius: var(--radius); font-weight: 600; cursor: pointer; border: none; transition: var(--transition); }
+    .btn-primary { background: var(--accent); color: var(--secondary); }
+    .btn-primary:hover { background: #d97706; transform: translateY(-2px); }
+    .btn-secondary { background: transparent; color: var(--white); border: 2px solid var(--white); }
+    .btn-secondary:hover { background: var(--white); color: var(--secondary); }
+    
+    /* Services Grid */
+    .services { padding: 4rem 0; }
+    .section-header { text-align: center; max-width: 600px; margin: 0 auto 2rem; }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+    .service-card { background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); border: 1px solid #e2e8f0; transition: var(--transition); }
+    .service-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+    .service-content { padding: 1.5rem; }
+    .service-list { list-style: none; margin: 1rem 0; }
+    .service-list li { padding: 0.5rem 0; color: var(--gray); display: flex; align-items: center; gap: 0.5rem; }
+    .service-list li::before { content: '✓'; color: var(--success); font-weight: 700; }
+    
+    /* Form */
+    .lead-section { padding: 4rem 0; background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); }
+    .lead-form-wrapper { background: var(--white); border-radius: var(--radius); padding: 2.5rem; box-shadow: var(--shadow-lg); max-width: 600px; margin: 0 auto; }
+    .lead-form-wrapper h2 { text-align: center; }
+    .lead-form-wrapper > p { text-align: center; margin-bottom: 1.5rem; }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .form-full { grid-column: 1 / -1; }
+    .form-group { margin-bottom: 1rem; }
+    .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 500; color: var(--secondary); }
+    .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 0.875rem; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 1rem; font-family: inherit; }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--primary); }
+    .form-submit { width: 100%; padding: 1rem; background: var(--accent); color: var(--secondary); border: none; border-radius: 8px; font-size: 1rem; font-weight: 700; cursor: pointer; transition: var(--transition); }
+    .form-submit:hover { background: #d97706; }
+    .form-note { text-align: center; margin-top: 0.75rem; font-size: 0.875rem; color: var(--gray); }
+    
+    /* Footer */
+    .footer { background: var(--dark); color: var(--white); padding: 3rem 0 1.5rem; text-align: center; }
+    .footer p { color: rgba(255,255,255,0.7); margin-bottom: 0.5rem; }
+    .footer a { color: rgba(255,255,255,0.7); }
+    .footer a:hover { color: var(--white); }
+    
+    @media (max-width: 768px) {
+      .nav { display: none; }
+      .form-grid { grid-template-columns: 1fr; }
     }
   </style>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "RoofingContractor",
-    "name": "Father & Son Solutions - Charlotte",
-    "description": "Expert roofing, gutter, and glass services in Charlotte NC",
-    "url": "https://fatherandson.solutions/charlotte.html",
-    "telephone": "+1-336-775-9543",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Charlotte",
-      "addressRegion": "NC",
-      "addressCountry": "US"
-    },
-    "areaServed": "Charlotte, NC and surrounding areas",
-    "priceRange": "$$"
-  }
-  </script>
 </head>
 <body>
-  <header class="hero">
-    <h1>🏠 Charlotte's Trusted Roofing & Home Services</h1>
-    <p>Father & Son Solutions | Licensed & Insured | Free Estimates</p>
-    <a href="#estimate" role="button" class="contrast">Get Free Estimate</a>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Father & <span>Son</span></a>
+      <nav class="nav">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#areas">Areas</a>
+        <a href="#estimate" class="btn btn-primary">Free Estimate</a>
+      </nav>
+      <a href="tel:13367759543" class="phone-cta">📞 336-775-9543</a>
+    </div>
   </header>
 
-  <main class="container">
-    <section>
-      <h2>Professional Services in Charlotte</h2>
-      <p>Serving Charlotte homeowners with expert roofing, gutter, and glass solutions. From Uptown to Ballantyne, we deliver quality workmanship across the Queen City.</p>
-    </section>
-
-    <div class="grid-3">
-      <article>
-        <h3>🛡️ Roofing Services</h3>
-        <ul>
-          <li>Roof Inspection & Repair</li>
-          <li>Complete Roof Replacement</li>
-          <li>Storm Damage Restoration</li>
-          <li>Shingle & Metal Roofing</li>
-          <li>Emergency 24/7 Service</li>
-        </ul>
-        <a href="roofing.html">Learn More →</a>
-      </article>
-      <article>
-        <h3>🌧️ Gutter Services</h3>
-        <ul>
-          <li>Seamless Gutter Installation</li>
-          <li>Gutter Repair & Maintenance</li>
-          <li>Downspout Services</li>
-          <li>Gutter Guard Systems</li>
-          <li>Emergency Repairs</li>
-        </ul>
-        <a href="gutters.html">Learn More →</a>
-      </article>
-      <article>
-        <h3>🪟 Glass & Windows</h3>
-        <ul>
-          <li>Window Installation</li>
-          <li>Glass Door Services</li>
-          <li>Energy-Efficient Solutions</li>
-          <li>Storm Window Repair</li>
-          <li>Custom Glass Projects</li>
-        </ul>
-        <a href="glass.html">Learn More →</a>
-      </article>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>🏠 Charlotte's Trusted Roofing & Home Services</h1>
+      <p>Expert roofing, gutter, and glass services throughout Charlotte and the surrounding areas.</p>
+      <div class="hero-badges">
+        <div class="hero-badge">✓ Licensed & Insured</div>
+        <div class="hero-badge">✓ Free Estimates</div>
+        <div class="hero-badge">✓ 24/7 Emergency Service</div>
+      </div>
+      <a href="#estimate" class="btn btn-primary">Get Free Estimate →</a>
     </div>
+  </section>
 
-    <section id="estimate">
-      <h2>📞 Get Your Free Charlotte Estimate</h2>
-      <form id="leadForm" class="grid">
-        <input type="text" name="firstname" placeholder="First Name" required>
-        <input type="text" name="lastname" placeholder="Last Name" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="tel" name="phone" placeholder="Phone" required>
-        <input type="text" name="city" value="Charlotte, NC" required>
-        <select name="service" required>
-          <option value="">Select Service*</option>
-          <option value="Roofing">Roofing</option>
-          <option value="Gutter">Gutters</option>
-          <option value="Glass">Glass/Windows</option>
-          <option value="Emergency">Emergency Repair</option>
-        </select>
-        <textarea name="message" placeholder="Tell us about your project..."></textarea>
-        <button type="submit">Request Free Estimate</button>
-      </form>
-    </section>
+  <!-- SERVICES -->
+  <section class="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Professional Services in Charlotte</h2>
+        <p>Comprehensive solutions for residential and commercial properties</p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-content">
+            <h3>🛡️ Roofing Services</h3>
+            <p>Complete roofing solutions for Charlotte homeowners</p>
+            <ul class="service-list">
+              <li>Roof Inspection & Repair</li>
+              <li>Complete Roof Replacement</li>
+              <li>Storm Damage Restoration</li>
+              <li>Emergency 24/7 Service</li>
+            </ul>
+            <a href="roofing.html">Learn More →</a>
+          </div>
+        </article>
+        <article class="service-card">
+          <div class="service-content">
+            <h3>🌧️ Gutter Services</h3>
+            <p>Protect your foundation with quality gutters</p>
+            <ul class="service-list">
+              <li>Seamless Gutter Installation</li>
+              <li>Gutter Repair & Maintenance</li>
+              <li>Downspout Services</li>
+              <li>Gutter Guard Systems</li>
+            </ul>
+            <a href="gutters.html">Learn More →</a>
+          </div>
+        </article>
+        <article class="service-card">
+          <div class="service-content">
+            <h3>🪟 Glass & Windows</h3>
+            <p>Professional glass solutions for your home</p>
+            <ul class="service-list">
+              <li>Window Installation</li>
+              <li>Glass Door Services</li>
+              <li>Energy-Efficient Solutions</li>
+              <li>Storm Window Repair</li>
+            </ul>
+            <a href="glass.html">Learn More →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
-    <nav>
-      <p><a href="index.html">← Back to Main Site</a> | <a href="raleigh.html">Raleigh Services →</a></p>
-    </nav>
-  </main>
+  <!-- LEAD FORM -->
+  <section id="estimate" class="lead-section">
+    <div class="container">
+      <div class="lead-form-wrapper">
+        <h2>📞 Get Your Free Charlotte Estimate</h2>
+        <p>Contact us today for a no-obligation consultation</p>
+        <form id="leadForm">
+          <div class="form-grid">
+            <div class="form-group"><label for="firstname">First Name *</label><input type="text" id="firstname" name="firstname" required></div>
+            <div class="form-group"><label for="lastname">Last Name *</label><input type="text" id="lastname" name="lastname" required></div>
+            <div class="form-group"><label for="email">Email *</label><input type="email" id="email" name="email" required></div>
+            <div class="form-group"><label for="phone">Phone *</label><input type="tel" id="phone" name="phone" required></div>
+            <div class="form-group form-full"><label for="city">City *</label><input type="text" id="city" name="city" value="Charlotte, NC" required></div>
+            <div class="form-group form-full"><label for="service">Service Needed *</label>
+              <select id="service" name="service" required>
+                <option value="">Select a Service</option>
+                <option value="Roofing">Roofing</option>
+                <option value="Gutter">Gutters</option>
+                <option value="Glass">Glass/Windows</option>
+                <option value="Emergency">Emergency Repair</option>
+              </select>
+            </div>
+            <div class="form-group form-full"><label for="message">Project Details</label><textarea id="message" name="message" rows="3" placeholder="Tell us about your project..."></textarea></div>
+          </div>
+          <button type="submit" class="form-submit">Request Free Estimate</button>
+          <p class="form-note">🔒 We respect your privacy.</p>
+        </form>
+      </div>
+    </div>
+  </section>
 
-  <footer class="container">
-    <small>© 2025 Father & Son Solutions | <a href="tel:13367759543">336-775-9543</a></small>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Father & Son Solutions | <a href="tel:13367759543">336-775-9543</a></p>
+    <p>Serving Charlotte and all of North Carolina</p>
   </footer>
 
 <script>
   document.querySelector("form").addEventListener("submit", function(e) {
     e.preventDefault();
-    alert("Thank you! We'll contact you shortly for your free estimate.");
-    this.reset();
+    const data = new FormData(this);
+    fetch("https://script.google.com/macros/s/AKfycbwdM4ZC-NXjq833-J58NecwDi08gf6sTn5DoTkapsn-eEWKUJECWb4BNCfQHAhywN-DYg/exec", { method: "POST", body: data })
+    .then(res => res.text()).then(txt => { alert("✅ Thank you! We'll contact you shortly."); this.reset(); })
+    .catch(err => { alert("❌ Something went wrong, please try again."); });
   });
 </script>
 </body>
