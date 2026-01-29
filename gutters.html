@@ -3,180 +3,199 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Professional Gutter Services in North Carolina | Father & Son Solutions</title>
-  <meta name="description" content="Expert gutter installation, repair, and maintenance in North Carolina. Protect your home from water damage with Father & Son Solutions. Free estimates available.">
-
-  <meta name="robots" content="index, follow">
+  <meta name="description" content="Expert gutter installation, repair, and maintenance in North Carolina. Protect your home from water damage with seamless gutters.">
   <link rel="canonical" href="https://fatherandson.solutions/gutters.html">
-
-  <!-- Open Graph (Facebook, LinkedIn) -->
-  <meta property="og:title" content="Professional Gutter Services in North Carolina">
-  <meta property="og:description" content="Seamless gutter installation, repair & protection. Serving all of North Carolina.">
-  <meta property="og:url" content="https://fatherandson.solutions/gutters.html">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Professional Gutter Services in North Carolina">
-  <meta name="twitter:description" content="Seamless gutter installation, repair & protection. Serving all of North Carolina.">
-<style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    .service-hero { text-align: center; margin: 2rem auto; }
-    .service-hero img {
-      width: 100%;
-      max-width: 600px;
-      height: auto;
-      border-radius: 8px;
-      display: block;
-      margin: 0 auto;
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --black: #0a0a0a;
+      --dark: #1a1a1a;
+      --gray-dark: #4a4a4a;
+      --gray: #6b6b6b;
+      --gray-light: #9ca3af;
+      --off-white: #f5f5f5;
+      --white: #ffffff;
+      --accent: #1e3a5f;
+      --transition: all 0.3s ease;
     }
-    .service-hero h2 { margin-top: 1rem; font-size: 1.8rem; color: #111; }
-    section { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
-    h3 { margin-top: 1.5rem; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; font-weight: 400; line-height: 1.6; color: var(--dark); background: var(--white); font-size: 16px; }
+    h1, h2, h3, h4 { font-weight: 600; line-height: 1.3; color: var(--black); letter-spacing: -0.02em; }
+    h1 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1.25rem; }
+    h2 { font-size: clamp(1.5rem, 2.5vw, 2rem); margin-bottom: 1rem; }
+    h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }
+    p { margin-bottom: 1rem; color: var(--gray); }
+    a { color: var(--accent); text-decoration: none; transition: var(--transition); }
+    a:hover { color: var(--black); }
+    
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+    .section { padding: 4rem 0; }
+    .btn { display: inline-block; padding: 0.875rem 1.75rem; font-size: 0.9rem; font-weight: 500; border-radius: 4px; transition: var(--transition); cursor: pointer; text-decoration: none; border: none; }
+    .btn-dark { background: var(--black); color: var(--white); }
+    .btn-dark:hover { background: var(--gray-dark); color: var(--white); }
+    
+    /* Header */
+    .header { position: fixed; top: 0; left: 0; right: 0; background: rgba(255,255,255,0.98); backdrop-filter: blur(10px); border-bottom: 1px solid var(--off-white); z-index: 1000; }
+    .header-inner { display: flex; justify-content: space-between; align-items: center; height: 72px; }
+    .logo { font-size: 1.25rem; font-weight: 600; color: var(--black); letter-spacing: -0.03em; }
+    .logo span { color: var(--gray-light); font-weight: 400; }
+    .nav { display: flex; align-items: center; gap: 2rem; }
+    .nav a { font-size: 0.9rem; font-weight: 500; color: var(--gray-dark); }
+    .nav a:hover { color: var(--black); }
+    
+    /* Hero */
+    .hero { min-height: 60vh; display: flex; align-items: center; background: linear-gradient(135deg, #fafafa 0%, var(--off-white) 100%); padding-top: 72px; }
+    .hero-content { max-width: 600px; }
+    
+    /* Services Grid */
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 2rem; }
+    .service-item { background: var(--off-white); padding: 1.5rem; border-radius: 8px; transition: var(--transition); }
+    .service-item:hover { background: var(--black); color: var(--white); }
+    .service-item:hover h3 { color: var(--white); }
+    .service-item:hover p { color: rgba(255,255,255,0.8); }
+    
+    /* FAQ */
+    .faq-item { border-bottom: 1px solid var(--off-white); padding: 1.5rem 0; }
+    .faq-item h3 { font-size: 1.1rem; margin-bottom: 0.75rem; }
+    .faq-item p { margin-bottom: 0; }
+    
+    /* CTA */
+    .cta { background: var(--black); color: var(--white); padding: 4rem 0; text-align: center; }
+    .cta h2 { color: var(--white); }
+    .cta p { color: rgba(255,255,255,0.7); }
+    
+    /* Footer */
+    .footer { background: var(--off-white); padding: 3rem 0 2rem; text-align: center; }
+    .footer p { font-size: 0.9rem; color: var(--gray); }
+    .footer-links { margin-top: 1rem; display: flex; justify-content: center; gap: 2rem; }
+    .footer-links a { color: var(--gray); font-size: 0.9rem; }
+    
+    @media (max-width: 768px) {
+      .services-grid { grid-template-columns: 1fr; }
+      .nav { display: none; }
+      .container { padding: 0 1.25rem; }
+    }
   </style>
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Father & Son Solutions",
-  "image": "https://fatherandson.solutions/logo.png",
-  "@id": "https://fatherandson.solutions",
-  "url": "https://fatherandson.solutions",
-  "telephone": "+1-336-775-9543",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "214 Wilkesboro Street",
-    "addressLocality": "Mocksville",
-    "addressRegion": "NC",
-    "postalCode": "27028",
-    "addressCountry": "US"
-  },
-  "priceRange": "$$",
-  "areaServed": [
-    {
-      "@type": "Place",
-      "name": "Mooresville NC"
-    },
-    {
-      "@type": "Place",
-      "name": "Charlotte NC"
-    },
-    {
-      "@type": "Place",
-      "name": "Winston-Salem NC"
-    },
-    {
-      "@type": "Place",
-      "name": "Raleigh NC"
-    }
-  ],
-  "openingHoursSpecification": [{
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday"
-    ],
-    "opens": "08:00",
-    "closes": "18:00"
-  }]
-}
-</script>
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Father & Son Solutions",
+    "url": "https://fatherandson.solutions/gutters.html",
+    "telephone": "+1-336-775-9543",
+    "address": {"@type": "PostalAddress", "streetAddress": "214 Wilkesboro Street", "addressLocality": "Mocksville", "addressRegion": "NC", "postalCode": "27028"},
+    "areaServed": "North Carolina"
+  }
+  </script>
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Why are seamless gutters better than sectional gutters?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Seamless gutters have fewer joints, which reduces the risk of leaks and clogs. They also require less maintenance and improve curb appeal."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How often should gutters be cleaned?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Gutters should be cleaned at least twice a year, usually in the spring and fall. Homes with many trees nearby may require more frequent cleaning."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do gutter guards really work?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, gutter guards reduce debris build-up, lower the need for frequent cleaning, and extend the life of your gutter system."
-      }
-    }
-  ]
-}
-</script>
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "Why are seamless gutters better?", "acceptedAnswer": {"@type": "Answer", "text": "Seamless gutters have fewer joints, reducing the risk of leaks and clogs. They require less maintenance and look cleaner."}},
+      {"@type": "Question", "name": "How often should gutters be cleaned?", "acceptedAnswer": {"@type": "Answer", "text": "At least twice a year—spring and fall. Homes with nearby trees may need more frequent cleaning."}},
+      {"@type": "Question", "name": "Do gutter guards really work?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, they reduce debris buildup, lower cleaning frequency, and extend gutter lifespan."}}
+    ]
+  }
+  </script>
 </head>
 <body>
-  <section class="service-hero">
-    <img src="IMG_9041.jpeg" alt="Gutter Services">
-    <h2>Professional Gutter Services</h2>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Father & Son <span>Solutions</span></a>
+      <nav class="nav">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#areas">Areas</a>
+        <a href="index.html#estimate" class="btn btn-dark">Get Estimate</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Professional Gutter Services</h1>
+        <p>Seamless gutter installation, repair, and maintenance to protect your home from water damage across North Carolina.</p>
+        <a href="index.html#estimate" class="btn btn-dark">Request Free Estimate</a>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <p>Keep your home protected from water damage with our expert gutter solutions. We provide reliable installation, repair, and maintenance services tailored to your needs.</p>
+  <section class="section">
+    <div class="container">
+      <h2>Complete Gutter Solutions</h2>
+      <p>Protect your foundation and home with our expert gutter services.</p>
+      <div class="services-grid">
+        <div class="service-item">
+          <h3>Seamless Gutters</h3>
+          <p>Custom-fit gutters with fewer joints to prevent leaks and enhance curb appeal.</p>
+        </div>
+        <div class="service-item">
+          <h3>Gutter Repair</h3>
+          <p>Fix leaks, sagging, and damage to extend your gutter system's life.</p>
+        </div>
+        <div class="service-item">
+          <h3>Gutter Guards</h3>
+          <p>Keep debris out and reduce maintenance with quality gutter protection.</p>
+        </div>
+        <div class="service-item">
+          <h3>Downspouts</h3>
+          <p>Proper water diversion away from your foundation and landscaping.</p>
+        </div>
+        <div class="service-item">
+          <h3>Maintenance</h3>
+          <p>Regular cleaning and inspection to prevent costly water damage.</p>
+        </div>
+        <div class="service-item">
+          <h3>Emergency Service</h3>
+          <p>Fast response for storm damage and urgent gutter issues.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section>
-  <h2>Why Gutters Matter</h2>
-  <p>
-    Gutters are one of the most important protective systems in any home. By directing rainwater away from your roof, siding, and foundation, gutters prevent costly damage such as basement flooding, soil erosion, and weakened structural integrity. Without a reliable gutter system, water can accumulate around your property and create long-term problems.
-  </p>
-  <p>
-    At Father & Son Solutions, we specialize in seamless gutter installation and repair services in Mooresville, NC and surrounding areas. Our team provides custom-fit gutters that not only look great but also perform effectively. Whether you need new downspouts, gutter guards to keep out leaves and debris, or emergency repairs after a storm, we deliver trusted solutions to protect your home year-round.
-  </p>
-  <p>
-    Our commitment is simple: high-quality materials, professional installation, and local expertise you can trust. Contact us today for a free estimate and keep your home safe from water damage.
-  </p>
-</section>
-    
-    <h3>Our Gutter Services</h3>
-    <ul>
-      <li>Seamless Gutter Installation</li>
-      <li>Gutter Repair & Maintenance</li>
-      <li>Downspout Installation</li>
-      <li>Gutter Guards & Protection</li>
-      <li>Emergency Gutter Services</li>
-    </ul>
+  <section class="section" style="background: var(--off-white);">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <h3>Why are seamless gutters better?</h3>
+        <p>They have fewer joints, reducing leak risk and maintenance needs while providing a cleaner look.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How often should gutters be cleaned?</h3>
+        <p>At least twice a year—spring and fall. Trees nearby may require quarterly cleaning.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do gutter guards really work?</h3>
+        <p>Yes, they significantly reduce debris buildup and extend the life of your gutter system.</p>
+      </div>
+    </div>
+  </section>
 
-    <h2>Q&A</h2>
-    <p><b>Q:</b> How often should gutters be cleaned?<br>
-       <b>A:</b> At least twice a year, or more if you have overhanging trees.</p>
-    <p><b>Q:</b> Do seamless gutters really make a difference?<br>
-       <b>A:</b> Yes, they reduce leaks and last longer than traditional sectional gutters.</p>
-  </main>
-    <section>
-  <h2>FAQ</h2>
-  <p><strong>Why are gutters so important?</strong><br>
-  Gutters protect your home’s foundation, roof, and siding from water damage. Without a proper system, water can cause costly repairs over time.</p>
+  <section class="cta">
+    <div class="container">
+      <h2>Protect Your Home Today</h2>
+      <p>Contact us for a free gutter consultation and estimate.</p>
+      <a href="tel:13367759543" class="btn" style="background: var(--white); color: var(--black);">Call 336-775-9543</a>
+    </div>
+  </section>
 
-  <p><strong>How often should gutters be cleaned?</strong><br>
-  At least twice a year — in spring and fall — to prevent clogs and overflow.</p>
+  <footer class="footer">
+    <div class="container">
+      <p>Father & Son Solutions | 214 Wilkesboro Street, Mocksville, NC 27028</p>
+      <p>Licensed & Insured | <a href="tel:13367759543">336-775-9543</a></p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="roofing.html">Roofing</a>
+        <a href="glass.html">Windows</a>
+      </div>
+    </div>
+  </footer>
 
-  <p><strong>Are seamless gutters worth it?</strong><br>
-  Yes, seamless gutters reduce leaks and require less maintenance compared to sectional gutters.</p>
-</section>
-
-
-    <hr>
-<nav>
-  <p>Explore more services:</p>
-  <ul>
-    <li><a href="index.html"> Back to Home</a></li>
-    <li><a href="roofing.html">Roofing Services</a></li>
-    <li><a href="glass.html">Glass & Window Services</a></li>
-  </ul>
-</nav>
 </body>
 </html>

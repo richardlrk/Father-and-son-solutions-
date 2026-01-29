@@ -1,182 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Expert Roofing Solutions in North Carolina | Father & Son Solutions</title>
   <meta name="description" content="Reliable roof inspection, replacement, and storm damage repair across North Carolina. Get long-lasting protection for your home with Father & Son Solutions.">
-
-  <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://fatherandson.solutions/roofing.html">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Expert Roofing Solutions in North Carolina">
-  <meta property="og:description" content="Roof inspection, replacement & storm damage repair. Trusted service across North Carolina.">
-  <meta property="og:url" content="https://fatherandson.solutions/roofing.html">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Expert Roofing Solutions in North Carolina">
-  <meta name="twitter:description" content="Roof inspection, replacement & storm damage repair. Trusted service across North Carolina.">
-<style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    .service-hero { text-align: center; margin: 2rem auto; }
-    .service-hero img {
-      width: 100%;
-      max-width: 600px;
-      height: auto;
-      border-radius: 8px;
-      display: block;
-      margin: 0 auto;
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --black: #0a0a0a;
+      --dark: #1a1a1a;
+      --gray-dark: #4a4a4a;
+      --gray: #6b6b6b;
+      --gray-light: #9ca3af;
+      --off-white: #f5f5f5;
+      --white: #ffffff;
+      --accent: #1e3a5f;
+      --transition: all 0.3s ease;
     }
-    .service-hero h2 { margin-top: 1rem; font-size: 1.8rem; color: #111; }
-    section { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
-    h3 { margin-top: 1.5rem; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; font-weight: 400; line-height: 1.6; color: var(--dark); background: var(--white); font-size: 16px; }
+    h1, h2, h3, h4 { font-weight: 600; line-height: 1.3; color: var(--black); letter-spacing: -0.02em; }
+    h1 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1.25rem; }
+    h2 { font-size: clamp(1.5rem, 2.5vw, 2rem); margin-bottom: 1rem; }
+    h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }
+    p { margin-bottom: 1rem; color: var(--gray); }
+    a { color: var(--accent); text-decoration: none; transition: var(--transition); }
+    a:hover { color: var(--black); }
+    
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+    .section { padding: 4rem 0; }
+    .btn { display: inline-block; padding: 0.875rem 1.75rem; font-size: 0.9rem; font-weight: 500; border-radius: 4px; transition: var(--transition); cursor: pointer; text-decoration: none; border: none; }
+    .btn-dark { background: var(--black); color: var(--white); }
+    .btn-dark:hover { background: var(--gray-dark); color: var(--white); }
+    
+    /* Header */
+    .header { position: fixed; top: 0; left: 0; right: 0; background: rgba(255,255,255,0.98); backdrop-filter: blur(10px); border-bottom: 1px solid var(--off-white); z-index: 1000; }
+    .header-inner { display: flex; justify-content: space-between; align-items: center; height: 72px; }
+    .logo { font-size: 1.25rem; font-weight: 600; color: var(--black); letter-spacing: -0.03em; }
+    .logo span { color: var(--gray-light); font-weight: 400; }
+    .nav { display: flex; align-items: center; gap: 2rem; }
+    .nav a { font-size: 0.9rem; font-weight: 500; color: var(--gray-dark); }
+    .nav a:hover { color: var(--black); }
+    
+    /* Hero */
+    .hero { min-height: 60vh; display: flex; align-items: center; background: linear-gradient(135deg, #fafafa 0%, var(--off-white) 100%); padding-top: 72px; }
+    .hero-content { max-width: 600px; }
+    
+    /* Services Grid */
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 2rem; }
+    .service-item { background: var(--off-white); padding: 1.5rem; border-radius: 8px; transition: var(--transition); }
+    .service-item:hover { background: var(--black); color: var(--white); }
+    .service-item:hover h3 { color: var(--white); }
+    .service-item:hover p { color: rgba(255,255,255,0.8); }
+    
+    /* FAQ */
+    .faq-item { border-bottom: 1px solid var(--off-white); padding: 1.5rem 0; }
+    .faq-item h3 { font-size: 1.1rem; margin-bottom: 0.75rem; }
+    .faq-item p { margin-bottom: 0; }
+    
+    /* CTA */
+    .cta { background: var(--black); color: var(--white); padding: 4rem 0; text-align: center; }
+    .cta h2 { color: var(--white); }
+    .cta p { color: rgba(255,255,255,0.7); }
+    
+    /* Footer */
+    .footer { background: var(--off-white); padding: 3rem 0 2rem; text-align: center; }
+    .footer p { font-size: 0.9rem; color: var(--gray); }
+    .footer-links { margin-top: 1rem; display: flex; justify-content: center; gap: 2rem; }
+    .footer-links a { color: var(--gray); font-size: 0.9rem; }
+    
+    @media (max-width: 768px) {
+      .services-grid { grid-template-columns: 1fr; }
+      .nav { display: none; }
+      .container { padding: 0 1.25rem; }
+    }
   </style>
-   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Father & Son Solutions",
-  "image": "https://fatherandson.solutions/logo.png",
-  "@id": "https://fatherandson.solutions",
-  "url": "https://fatherandson.solutions",
-  "telephone": "+1-336-775-9543",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "214 Wilkesboro Street",
-    "addressLocality": "Mocksville",
-    "addressRegion": "NC",
-    "postalCode": "27028",
-    "addressCountry": "US"
-  },
-  "priceRange": "$$",
-  "areaServed": [
-    {
-      "@type": "Place",
-      "name": "Mooresville NC"
-    },
-    {
-      "@type": "Place",
-      "name": "Charlotte NC"
-    },
-    {
-      "@type": "Place",
-      "name": "Winston-Salem NC"
-    },
-    {
-      "@type": "Place",
-      "name": "Raleigh NC"
-    }
-  ],
-  "openingHoursSpecification": [{
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday"
-    ],
-    "opens": "08:00",
-    "closes": "18:00"
-  }]
-}
-</script>
-   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How long does a typical roof last?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The average roof lasts 20 to 30 years, depending on the material, weather conditions, and maintenance. Metal and tile roofs can last even longer."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What are the signs that my roof needs repair?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Common signs include missing shingles, leaks inside your home, sagging roof areas, and granules in gutters. A professional inspection helps confirm damage."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Should I repair or replace my roof after a storm?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It depends on the severity of the damage. Minor issues like a few missing shingles can often be repaired, but widespread damage may require a full replacement."
-      }
-    }
-  ]
-}
-</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RoofingContractor",
+    "name": "Father & Son Solutions",
+    "url": "https://fatherandson.solutions/roofing.html",
+    "telephone": "+1-336-775-9543",
+    "address": {"@type": "PostalAddress", "streetAddress": "214 Wilkesboro Street", "addressLocality": "Mocksville", "addressRegion": "NC", "postalCode": "27028"},
+    "areaServed": "North Carolina"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "How long does a typical roof last?", "acceptedAnswer": {"@type": "Answer", "text": "The average roof lasts 20 to 30 years, depending on the material, weather conditions, and maintenance. Metal and tile roofs can last even longer."}},
+      {"@type": "Question", "name": "What are the signs that my roof needs repair?", "acceptedAnswer": {"@type": "Answer", "text": "Common signs include missing shingles, leaks inside your home, sagging roof areas, and granules in gutters. A professional inspection helps confirm damage."}},
+      {"@type": "Question", "name": "Should I repair or replace my roof after a storm?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the severity of the damage. Minor issues like a few missing shingles can often be repaired, but widespread damage may require a full replacement."}}
+    ]
+  }
+  </script>
 </head>
 <body>
-  <section class="service-hero">
-    <img src="IMG_9043.jpeg" alt="Roofing Services">
-    <h2>Expert Roofing Solutions</h2>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Father & Son <span>Solutions</span></a>
+      <nav class="nav">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#areas">Areas</a>
+        <a href="index.html#estimate" class="btn btn-dark">Get Estimate</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Expert Roofing Solutions</h1>
+        <p>Professional roof inspection, replacement, and storm damage repair across North Carolina. Protecting your home since 2004.</p>
+        <a href="index.html#estimate" class="btn btn-dark">Request Free Estimate</a>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <p>Protect your home and family with high-quality roofing services. From inspections to full replacements, we ensure durability and peace of mind.</p>
+  <section class="section">
+    <div class="container">
+      <h2>Complete Roofing Services</h2>
+      <p>Your roof is your home's first line of defense. We ensure durability and peace of mind.</p>
+      <div class="services-grid">
+        <div class="service-item">
+          <h3>Roof Inspection</h3>
+          <p>Comprehensive assessment to identify issues before they become costly repairs.</p>
+        </div>
+        <div class="service-item">
+          <h3>Roof Replacement</h3>
+          <p>Full replacement using quality materials for long-lasting protection.</p>
+        </div>
+        <div class="service-item">
+          <h3>Storm Damage Repair</h3>
+          <p>Fast response for emergency repairs after severe weather.</p>
+        </div>
+        <div class="service-item">
+          <h3>Shingle & Metal Roofing</h3>
+          <p>Expert installation of all major roofing materials.</p>
+        </div>
+        <div class="service-item">
+          <h3>Skylight Installation</h3>
+          <p>Add natural light and energy efficiency to your home.</p>
+        </div>
+        <div class="service-item">
+          <h3>Ventilation Solutions</h3>
+          <p>Proper attic ventilation to extend roof life and reduce energy costs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
- <section>
-  <h2>Protecting Your Home with Quality Roofing</h2>
-  <p>
-    Your roof is your home’s first line of defense against wind, rain, and severe weather. A well-maintained roof not only shields your property but also improves energy efficiency and enhances curb appeal. Ignoring small roofing problems can quickly lead to leaks, mold, and expensive repairs.
-  </p>
-  <p>
-    Father & Son Solutions provides expert roofing services in Mooresville, NC, including inspections, repairs, replacements, and emergency storm damage restoration. We work with both shingle and metal roofing, using only durable, industry-leading materials to ensure long-lasting protection. Our team is committed to delivering workmanship that exceeds expectations, whether you need a minor repair or a complete roof replacement.
-  </p>
-  <p>
-    With years of local experience, we understand the challenges that North Carolina weather brings. Trust us to keep your roof strong, secure, and built to last. Call today for a no-obligation roofing inspection.
-  </p>
-</section>
-     
-    <h3>Our Roofing Services</h3>
-    <ul>
-      <li>Roof Inspection & Repair</li>
-      <li>Complete Roof Replacement</li>
-      <li>Storm Damage Restoration</li>
-      <li>Shingle & Metal Roofing</li>
-      <li>Emergency Roof Services</li>
-    </ul>
+  <section class="section" style="background: var(--off-white);">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <h3>How long does a typical roof last?</h3>
+        <p>The average roof lasts 20-30 years depending on material, weather, and maintenance. Metal and tile roofs can last even longer.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What are the signs that my roof needs repair?</h3>
+        <p>Common signs include missing shingles, interior leaks, sagging areas, and granules in gutters. Schedule a professional inspection to confirm.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Should I repair or replace my roof after a storm?</h3>
+        <p>It depends on damage severity. Minor issues can often be repaired, but widespread damage usually requires full replacement.</p>
+      </div>
+    </div>
+  </section>
 
-    <h2>Q&A</h2>
-    <p><b>Q:</b> How do I know if I need a new roof?<br>
-       <b>A:</b> Signs include leaks, missing shingles, or a roof older than 20 years.</p>
-    <p><b>Q:</b> How often should I have my roof inspected?<br>
-       <b>A:</b> Most experts recommend inspecting your roof at least once a year, ideally in the spring or fall. Regular inspections help identify small issues early, prevent costly damage, and extend the lifespan of your roof.</p>
-  </main>
-     <section>
-  <h2>FAQ</h2>
-  <p><strong>How often should I have my roof inspected?</strong><br>
-  Most experts recommend inspecting your roof at least once a year, ideally in spring or fall. Regular inspections help identify small issues early and extend the roof’s lifespan.</p>
+  <section class="cta">
+    <div class="container">
+      <h2>Need a Roof Inspection?</h2>
+      <p>Contact us today for a free, no-obligation consultation.</p>
+      <a href="tel:13367759543" class="btn" style="background: var(--white); color: var(--black);">Call 336-775-9543</a>
+    </div>
+  </section>
 
-  <p><strong>What are the signs I need a new roof?</strong><br>
-  Leaks, missing shingles, or a roof older than 20 years are clear signs you may need replacement.</p>
+  <footer class="footer">
+    <div class="container">
+      <p>Father & Son Solutions | 214 Wilkesboro Street, Mocksville, NC 27028</p>
+      <p>Licensed & Insured | <a href="tel:13367759543">336-775-9543</a></p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="gutters.html">Gutters</a>
+        <a href="glass.html">Windows</a>
+      </div>
+    </div>
+  </footer>
 
-  <p><strong>Do you offer emergency roof services?</strong><br>
-  Yes, we provide fast response for storm damage and urgent roofing issues in North Carolina.</p>
-</section>
-
-
-     <hr>
-<nav>
-  <p>Explore more services:</p>
-  <ul>
-    <li><a href="index.html"> Back to Home</a></li>
-    <li><a href="gutters.html">Gutters Services</a></li>
-    <li><a href="glass.html">Glass & Window Services</a></li>
-  </ul>
-</nav>
 </body>
 </html>

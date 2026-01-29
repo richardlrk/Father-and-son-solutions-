@@ -3,180 +3,199 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Glass & Window Services in North Carolina | Father & Son Solutions</title>
-  <meta name="description" content="Window installation, storm window services, and energy-efficient glass solutions across North Carolina. Increase comfort & value with Father & Son Solutions.">
-
-  <meta name="robots" content="index, follow">
+  <meta name="description" content="Window installation, storm window services, and energy-efficient glass solutions. Increase comfort and value with Father & Son Solutions.">
   <link rel="canonical" href="https://fatherandson.solutions/glass.html">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Glass & Window Services in North Carolina">
-  <meta property="og:description" content="Window installation, storm window services & energy-efficient glass. Serving all of North Carolina.">
-  <meta property="og:url" content="https://fatherandson.solutions/glass.html">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Glass & Window Services in North Carolina">
-  <meta name="twitter:description" content="Window installation, storm window services & energy-efficient glass. Serving all of North Carolina.">
-<style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    .service-hero { text-align: center; margin: 2rem auto; }
-    .service-hero img {
-      width: 100%;
-      max-width: 600px;
-      height: auto;
-      border-radius: 8px;
-      display: block;
-      margin: 0 auto;
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --black: #0a0a0a;
+      --dark: #1a1a1a;
+      --gray-dark: #4a4a4a;
+      --gray: #6b6b6b;
+      --gray-light: #9ca3af;
+      --off-white: #f5f5f5;
+      --white: #ffffff;
+      --accent: #1e3a5f;
+      --transition: all 0.3s ease;
     }
-    .service-hero h2 { margin-top: 1rem; font-size: 1.8rem; color: #111; }
-    section { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
-    h3 { margin-top: 1.5rem; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; font-weight: 400; line-height: 1.6; color: var(--dark); background: var(--white); font-size: 16px; }
+    h1, h2, h3, h4 { font-weight: 600; line-height: 1.3; color: var(--black); letter-spacing: -0.02em; }
+    h1 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1.25rem; }
+    h2 { font-size: clamp(1.5rem, 2.5vw, 2rem); margin-bottom: 1rem; }
+    h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }
+    p { margin-bottom: 1rem; color: var(--gray); }
+    a { color: var(--accent); text-decoration: none; transition: var(--transition); }
+    a:hover { color: var(--black); }
+    
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+    .section { padding: 4rem 0; }
+    .btn { display: inline-block; padding: 0.875rem 1.75rem; font-size: 0.9rem; font-weight: 500; border-radius: 4px; transition: var(--transition); cursor: pointer; text-decoration: none; border: none; }
+    .btn-dark { background: var(--black); color: var(--white); }
+    .btn-dark:hover { background: var(--gray-dark); color: var(--white); }
+    
+    /* Header */
+    .header { position: fixed; top: 0; left: 0; right: 0; background: rgba(255,255,255,0.98); backdrop-filter: blur(10px); border-bottom: 1px solid var(--off-white); z-index: 1000; }
+    .header-inner { display: flex; justify-content: space-between; align-items: center; height: 72px; }
+    .logo { font-size: 1.25rem; font-weight: 600; color: var(--black); letter-spacing: -0.03em; }
+    .logo span { color: var(--gray-light); font-weight: 400; }
+    .nav { display: flex; align-items: center; gap: 2rem; }
+    .nav a { font-size: 0.9rem; font-weight: 500; color: var(--gray-dark); }
+    .nav a:hover { color: var(--black); }
+    
+    /* Hero */
+    .hero { min-height: 60vh; display: flex; align-items: center; background: linear-gradient(135deg, #fafafa 0%, var(--off-white) 100%); padding-top: 72px; }
+    .hero-content { max-width: 600px; }
+    
+    /* Services Grid */
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 2rem; }
+    .service-item { background: var(--off-white); padding: 1.5rem; border-radius: 8px; transition: var(--transition); }
+    .service-item:hover { background: var(--black); color: var(--white); }
+    .service-item:hover h3 { color: var(--white); }
+    .service-item:hover p { color: rgba(255,255,255,0.8); }
+    
+    /* FAQ */
+    .faq-item { border-bottom: 1px solid var(--off-white); padding: 1.5rem 0; }
+    .faq-item h3 { font-size: 1.1rem; margin-bottom: 0.75rem; }
+    .faq-item p { margin-bottom: 0; }
+    
+    /* CTA */
+    .cta { background: var(--black); color: var(--white); padding: 4rem 0; text-align: center; }
+    .cta h2 { color: var(--white); }
+    .cta p { color: rgba(255,255,255,0.7); }
+    
+    /* Footer */
+    .footer { background: var(--off-white); padding: 3rem 0 2rem; text-align: center; }
+    .footer p { font-size: 0.9rem; color: var(--gray); }
+    .footer-links { margin-top: 1rem; display: flex; justify-content: center; gap: 2rem; }
+    .footer-links a { color: var(--gray); font-size: 0.9rem; }
+    
+    @media (max-width: 768px) {
+      .services-grid { grid-template-columns: 1fr; }
+      .nav { display: none; }
+      .container { padding: 0 1.25rem; }
+    }
   </style>
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Father & Son Solutions",
-  "image": "https://fatherandson.solutions/logo.png",
-  "@id": "https://fatherandson.solutions",
-  "url": "https://fatherandson.solutions",
-  "telephone": "+1-336-775-9543",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "214 Wilkesboro Street",
-    "addressLocality": "Mocksville",
-    "addressRegion": "NC",
-    "postalCode": "27028",
-    "addressCountry": "US"
-  },
-  "priceRange": "$$",
-  "areaServed": [
-    {
-      "@type": "Place",
-      "name": "Mooresville NC"
-    },
-    {
-      "@type": "Place",
-      "name": "Charlotte NC"
-    },
-    {
-      "@type": "Place",
-      "name": "Winston-Salem NC"
-    },
-    {
-      "@type": "Place",
-      "name": "Raleigh NC"
-    }
-  ],
-  "openingHoursSpecification": [{
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday"
-    ],
-    "opens": "08:00",
-    "closes": "18:00"
-  }]
-}
-</script>
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Father & Son Solutions",
+    "url": "https://fatherandson.solutions/glass.html",
+    "telephone": "+1-336-775-9543",
+    "address": {"@type": "PostalAddress", "streetAddress": "214 Wilkesboro Street", "addressLocality": "Mocksville", "addressRegion": "NC", "postalCode": "27028"},
+    "areaServed": "North Carolina"
+  }
+  </script>
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Are energy-efficient windows worth the investment?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, energy-efficient windows lower heating and cooling costs, increase comfort, and add value to your home."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the difference between single-pane and double-pane windows?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Double-pane windows provide better insulation, reduce noise, and improve energy efficiency compared to single-pane windows."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How often should windows be replaced?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most windows last 15-25 years depending on the material and maintenance. Drafts, condensation, or difficulty opening them are signs it’s time for replacement."
-      }
-    }
-  ]
-}
-</script>
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "Are energy-efficient windows worth it?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, they lower heating and cooling costs, increase comfort, and add value to your home."}},
+      {"@type": "Question", "name": "Single-pane vs double-pane?", "acceptedAnswer": {"@type": "Answer", "text": "Double-pane windows provide better insulation, noise reduction, and energy efficiency."}},
+      {"@type": "Question", "name": "How often should windows be replaced?", "acceptedAnswer": {"@type": "Answer", "text": "Most windows last 15-25 years. Signs include drafts, condensation, and difficulty operating them."}}
+    ]
+  }
+  </script>
 </head>
 <body>
-  <section class="service-hero">
-    <img src="IMG_9047.jpeg" alt="Glass and Window Services">
-    <h2>Glass & Window Services</h2>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Father & Son <span>Solutions</span></a>
+      <nav class="nav">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#areas">Areas</a>
+        <a href="index.html#estimate" class="btn btn-dark">Get Estimate</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Professional Glass & Window Services</h1>
+        <p>Energy-efficient window installation and glass solutions to enhance your home's comfort, security, and value.</p>
+        <a href="index.html#estimate" class="btn btn-dark">Request Free Estimate</a>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <p>Upgrade your home with energy-efficient and durable glass solutions. Our expert team installs and repairs windows and glass doors with precision.</p>
+  <section class="section">
+    <div class="container">
+      <h2>Complete Glass Solutions</h2>
+      <p>Upgrade your home with quality windows and glass services.</p>
+      <div class="services-grid">
+        <div class="service-item">
+          <h3>Window Installation</h3>
+          <p>Professional installation of new windows for better insulation and aesthetics.</p>
+        </div>
+        <div class="service-item">
+          <h3>Window Replacement</h3>
+          <p>Replace old, drafty windows with energy-efficient modern options.</p>
+        </div>
+        <div class="service-item">
+          <h3>Glass Doors</h3>
+          <p>Sliding and hinged glass door installation and repair services.</p>
+        </div>
+        <div class="service-item">
+          <h3>Storm Windows</h3>
+          <p>Additional protection against severe weather and noise.</p>
+        </div>
+        <div class="service-item">
+          <h3>Energy-Efficient Glass</h3>
+          <p>Low-E glass solutions to reduce energy costs year-round.</p>
+        </div>
+        <div class="service-item">
+          <h3>Commercial Glass</h3>
+          <p>Business glass services including storefronts and office partitions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section>
-  <h2>Professional Glass & Window Services</h2>
-  <p>
-    Windows and glass are more than just design features — they play a critical role in energy efficiency, comfort, and safety. Old or damaged windows can drive up utility bills, reduce your home’s security, and lower property value. Investing in high-quality glass solutions makes your home safer and more comfortable while improving its overall appearance.
-  </p>
-  <p>
-    Father & Son Solutions offers comprehensive glass and window services in Mooresville, NC. From new window installations and replacements to glass doors and storm window solutions, we provide tailored services that meet your needs. We also specialize in energy-efficient glass that helps lower heating and cooling costs while maintaining indoor comfort throughout the year.
-  </p>
-  <p>
-    Whether you’re upgrading a single window or outfitting your entire home, our team delivers reliable service and professional results. Contact us today to learn how our glass services can enhance your home’s beauty, efficiency, and security.
-  </p>
-</section>
-    
-    <h3>Our Glass & Window Services</h3>
-    <ul>
-      <li>Window Installation & Replacement</li>
-      <li>Glass Door Installation</li>
-      <li>Storm Window Services</li>
-      <li>Energy-Efficient Glass</li>
-      <li>Commercial Glass Services</li>
-    </ul>
+  <section class="section" style="background: var(--off-white);">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <h3>Are energy-efficient windows worth it?</h3>
+        <p>Yes, they significantly reduce heating and cooling costs while improving indoor comfort.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What's the difference between single and double-pane?</h3>
+        <p>Double-pane windows offer superior insulation, noise reduction, and energy efficiency.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I know when to replace my windows?</h3>
+        <p>Signs include drafts, condensation between panes, difficulty opening/closing, and rising energy bills.</p>
+      </div>
+    </div>
+  </section>
 
-    <h2>Q&A</h2></h2>
-    <p><b>Q:</b> Are energy-efficient windows worth it?<br>
-       <b>A:</b> Absolutely. They lower heating and cooling costs and improve comfort.</p>
-    <p><b>Q:</b> Can you replace just one window pane?<br>
-       <b>A:</b> Yes, we handle both single-pane replacements and full installations.</p>
-  </main>
-    <section>
-  <h2>FAQ</h2>
-  <p><strong>What are the benefits of energy-efficient windows?</strong><br>
-  They reduce heating and cooling costs, improve comfort, and increase home value while helping the environment.</p>
+  <section class="cta">
+    <div class="container">
+      <h2>Ready to Upgrade Your Windows?</h2>
+      <p>Contact us for a free consultation and estimate.</p>
+      <a href="tel:13367759543" class="btn" style="background: var(--white); color: var(--black);">Call 336-775-9543</a>
+    </div>
+  </section>
 
-  <p><strong>Can you replace just one window pane?</strong><br>
-  Yes, we can replace single panes as well as complete window installations.</p>
+  <footer class="footer">
+    <div class="container">
+      <p>Father & Son Solutions | 214 Wilkesboro Street, Mocksville, NC 27028</p>
+      <p>Licensed & Insured | <a href="tel:13367759543">336-775-9543</a></p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="roofing.html">Roofing</a>
+        <a href="gutters.html">Gutters</a>
+      </div>
+    </div>
+  </footer>
 
-  <p><strong>Do new windows improve home security?</strong><br>
-  Absolutely. Modern windows use stronger glass and improved locking systems for better protection.</p>
-</section>
-
-
-    <hr>
-<nav>
-  <p>Explore more services:</p>
-  <ul>
-    <li><a href="index.html"> Back to Home</a></li>
-    <li><a href="roofing.html">Roofing Services</a></li>
-    <li><a href="gutters.html">Gutters Services</a></li>
-  </ul>
-</nav>
 </body>
 </html>
